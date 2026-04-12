@@ -341,6 +341,31 @@
             font-weight: 300;
         }
 
+        .about-logo-container {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            border: 2px solid var(--gold);
+        }
+
+        .about-large-logo {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            animation: logoGlow 3s ease-in-out infinite;
+        }
+
+        @keyframes logoGlow {
+            0%, 100% {
+                filter: drop-shadow(0 0 20px rgba(197, 165, 114, 0.4));
+            }
+            50% {
+                filter: drop-shadow(0 0 30px rgba(197, 165, 114, 0.7));
+            }
+        }
+
         .about-stats {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -836,7 +861,7 @@
                 MJ CONSEILS
                 <span>Conseil Juridique d'Excellence</span>
             </h1>
-            <p>We never stop until you are satisfied</p>
+            <p>Nous ne nous arrêtons jamais tant que vous n'êtes pas satisfait</p>
             <a href="#contact" class="cta-button">Prendre Rendez-vous</a>
         </div>
     </section>
@@ -871,10 +896,13 @@
     <section class="about" id="cabinet">
         <div class="about-container">
             <div class="about-content fade-in">
+                <div class="about-logo-container">
+                    <img src="logo-mj-2.png" alt="MJ CONSEILS - Services" class="about-large-logo">
+                </div>
                 <h2>Le Cabinet</h2>
                 <p>MJ CONSEILS est un cabinet de conseil juridique dynamique basé au Bénin, avec une présence internationale grâce à notre correspondant en France. Depuis deux ans, nous accompagnons particuliers et entreprises avec une approche personnalisée et une exigence d'excellence constante.</p>
                 <p>Notre équipe d'experts juridiques combine expertise pointue et compréhension approfondie des enjeux de nos clients. Nous croyons en une relation de confiance durable, fondée sur l'écoute, la transparence et l'efficacité.</p>
-                <p>Fidèles à notre devise "We never stop until you are satisfied", nous mettons notre savoir-faire au service de vos intérêts avec détermination et professionnalisme, que vous soyez un chef d'entreprise, un particulier ou une institution.</p>
+                <p>Fidèles à notre devise "Nous ne nous arrêtons jamais tant que vous n'êtes pas satisfait", nous mettons notre savoir-faire au service de vos intérêts avec détermination et professionnalisme, que vous soyez un chef d'entreprise, un particulier ou une institution.</p>
             </div>
 
             <div class="about-stats">
@@ -1096,7 +1124,7 @@
                     </div>
                     <div class="contact-item">
                         <strong>Email</strong>
-                        <span>mjconseils77@gmail.com<br>mjconseils@hotmail.com</span>
+                        <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="2e43444d41405d4b47425d19196e49434f4742004d4143">[email&#160;protected]</a><br><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="bbd6d1d8d4d5c8ded2d7c8fbd3d4cfd6dad2d795d8d4d6">[email&#160;protected]</a></span>
                     </div>
                     <div class="contact-item">
                         <strong>Adresse</strong>
@@ -1153,7 +1181,7 @@
         <p>Mentions Légales | Politique de Confidentialité</p>
     </footer>
 
-    <script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
         // Navbar scroll effect
         const navbar = document.getElementById('navbar');
         window.addEventListener('scroll', () => {
@@ -3391,17 +3419,4 @@
         modal.addEventListener('click', function(e) {
             if (e.target === modal) {
                 modal.classList.remove('active');
-                document.body.style.overflow = 'auto';
-            }
-        });
-
-        // Close with Escape key
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape' && modal.classList.contains('active')) {
-                modal.classList.remove('active');
-                document.body.style.overflow = 'auto';
-            }
-        });
-    </script>
-</body>
-</html>
+                document.body.style.overflow = 'auto'
