@@ -39,13 +39,17 @@
             background: rgba(10, 22, 40, 0.95);
             backdrop-filter: blur(10px);
             z-index: 1000;
-            padding: 1.5rem 5%;
+            padding: 1rem 5%;
             transition: all 0.3s ease;
         }
 
         nav.scrolled {
-            padding: 1rem 5%;
+            padding: 0.8rem 5%;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        nav.scrolled .logo img {
+            height: 55px;
         }
 
         .nav-container {
@@ -63,13 +67,14 @@
         }
 
         .logo img {
-            height: 50px;
+            height: 70px;
             width: auto;
             transition: transform 0.3s ease;
+            filter: drop-shadow(0 2px 4px rgba(197, 165, 114, 0.3));
         }
 
         .logo:hover img {
-            transform: scale(1.05);
+            transform: scale(1.08);
         }
 
         .nav-links {
@@ -656,457 +661,44 @@
             opacity: 1;
             transform: translateY(0);
         }
-    </style>
-</head>
-<body>
-    <nav id="navbar">
-        <div class="nav-container">
-            <div class="logo">
-                <img src="logo-mj.jpg" alt="MJ CONSEILS">
-            </div>
-            <ul class="nav-links">
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#expertise">Expertise</a></li>
-                <li><a href="#cabinet">Le Cabinet</a></li>
-                <li><a href="#blog">Actualités</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
 
-    <section class="hero" id="accueil">
-        <div class="hero-content">
-            <h1>
-                MJ CONSEILS
-                <span>Conseil Juridique d'Excellence</span>
-            </h1>
-            <p>We never stop until you are satisfied</p>
-            <a href="#contact" class="cta-button">Prendre Rendez-vous</a>
-        </div>
-    </section>
-
-    <section class="expertise" id="expertise">
-        <div class="section-subtitle">Nos Domaines d'Expertise</div>
-        <h2 class="section-title">Une Expertise Multidisciplinaire</h2>
-        
-        <div class="expertise-grid">
-            <div class="expertise-card fade-in">
-                <h3>Droit des Affaires</h3>
-                <p>Accompagnement stratégique dans vos opérations commerciales, fusions-acquisitions, contrats d'affaires et restructurations. Notre expertise vous garantit une sécurité juridique optimale dans tous vos projets d'entreprise.</p>
-            </div>
-
-            <div class="expertise-card fade-in">
-                <h3>Droit du Travail</h3>
-                <p>Conseil et défense en matière de relations individuelles et collectives de travail. Nous assistons employeurs et salariés dans la gestion des contrats, litiges et procédures prud'homales avec rigueur et discrétion.</p>
-            </div>
-
-            <div class="expertise-card fade-in">
-                <h3>Droit de la Famille</h3>
-                <p>Accompagnement bienveillant dans les moments délicats : divorce, succession, régimes matrimoniaux, autorité parentale. Notre approche allie expertise juridique et sensibilité humaine.</p>
-            </div>
-
-            <div class="expertise-card fade-in">
-                <h3>Droit Immobilier</h3>
-                <p>Sécurisation de vos transactions immobilières, baux commerciaux et d'habitation, copropriété et contentieux. Une expertise pointue pour protéger vos investissements patrimoniaux.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="about" id="cabinet">
-        <div class="about-container">
-            <div class="about-content fade-in">
-                <h2>Le Cabinet</h2>
-                <p>MJ CONSEILS est un cabinet de conseil juridique dynamique basé au Bénin, avec une présence internationale grâce à notre correspondant en France. Depuis deux ans, nous accompagnons particuliers et entreprises avec une approche personnalisée et une exigence d'excellence constante.</p>
-                <p>Notre équipe d'experts juridiques combine expertise pointue et compréhension approfondie des enjeux de nos clients. Nous croyons en une relation de confiance durable, fondée sur l'écoute, la transparence et l'efficacité.</p>
-                <p>Fidèles à notre devise "We never stop until you are satisfied", nous mettons notre savoir-faire au service de vos intérêts avec détermination et professionnalisme, que vous soyez un chef d'entreprise, un particulier ou une institution.</p>
-            </div>
-
-            <div class="about-stats">
-                <div class="stat fade-in">
-                    <span class="stat-number">2</span>
-                    <span class="stat-label">Années d'Expérience</span>
-                </div>
-                <div class="stat fade-in">
-                    <span class="stat-number">50+</span>
-                    <span class="stat-label">Clients Satisfaits</span>
-                </div>
-                <div class="stat fade-in">
-                    <span class="stat-number">95%</span>
-                    <span class="stat-label">Taux de Réussite</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="blog" id="blog">
-        <div class="blog-container">
-            <div class="section-subtitle">Actualités Juridiques</div>
-            <h2 class="section-title">Notre Blog</h2>
-
-            <div class="blog-grid">
-                <article class="blog-card fade-in">
-                    <div class="blog-image"></div>
-                    <div class="blog-content">
-                        <div class="blog-date">09 Février 2026</div>
-                        <h3>Intelligence Artificielle et Droit : Enjeux Juridiques en Afrique</h3>
-                        <p>L'IA transforme le paysage juridique africain. Découvrez les défis réglementaires, la protection des données, la responsabilité juridique des systèmes autonomes et l'avenir du droit à l'ère du numérique.</p>
-                        <a href="#" class="read-more">Lire l'article</a>
-                    </div>
-                </article>
-
-                <article class="blog-card fade-in">
-                    <div class="blog-image"></div>
-                    <div class="blog-content">
-                        <div class="blog-date">05 Février 2026</div>
-                        <h3>OHADA : Les nouveautés du Droit des Sociétés Commerciales</h3>
-                        <p>Analyse des récentes réformes de l'OHADA et leur impact sur la création et la gestion des entreprises au Bénin et dans l'espace UEMOA.</p>
-                        <a href="#" class="read-more">Lire l'article</a>
-                    </div>
-                </article>
-
-                <article class="blog-card fade-in">
-                    <div class="blog-image"></div>
-                    <div class="blog-content">
-                        <div class="blog-date">28 Janvier 2026</div>
-                        <h3>Code du Travail Béninois : Droits et Obligations de l'Employeur</h3>
-                        <p>Guide complet sur les obligations légales des employeurs au Bénin : contrats de travail, congés, licenciement et protection sociale.</p>
-                        <a href="#" class="read-more">Lire l'article</a>
-                    </div>
-                </article>
-
-                <article class="blog-card fade-in">
-                    <div class="blog-image"></div>
-                    <div class="blog-content">
-                        <div class="blog-date">20 Janvier 2026</div>
-                        <h3>Investissement Immobilier au Bénin : Cadre Juridique 2026</h3>
-                        <p>Tout ce qu'il faut savoir sur l'acquisition foncière, les titres de propriété et la sécurisation de vos investissements immobiliers au Bénin.</p>
-                        <a href="#" class="read-more">Lire l'article</a>
-                    </div>
-                </article>
-
-                <article class="blog-card fade-in">
-                    <div class="blog-image"></div>
-                    <div class="blog-content">
-                        <div class="blog-date">15 Janvier 2026</div>
-                        <h3>Succession et Héritage : Droit Béninois vs Droit Coutumier</h3>
-                        <p>Comprendre l'articulation entre le droit positif et le droit coutumier en matière successorale au Bénin pour mieux protéger votre patrimoine.</p>
-                        <a href="#" class="read-more">Lire l'article</a>
-                    </div>
-                </article>
-
-                <article class="blog-card fade-in">
-                    <div class="blog-image"></div>
-                    <div class="blog-content">
-                        <div class="blog-date">08 Janvier 2026</div>
-                        <h3>Créer son Entreprise en Zone CEDEAO : Opportunités et Défis</h3>
-                        <p>Les avantages de la libre circulation dans l'espace CEDEAO pour les entrepreneurs et les démarches juridiques pour s'implanter dans la région.</p>
-                        <a href="#" class="read-more">Lire l'article</a>
-                    </div>
-                </article>
-
-                <article class="blog-card fade-in">
-                    <div class="blog-image"></div>
-                    <div class="blog-content">
-                        <div class="blog-date">22 Décembre 2025</div>
-                        <h3>Divorce et Pension Alimentaire : Ce que dit la Loi au Bénin</h3>
-                        <p>Guide juridique sur les procédures de divorce, la garde des enfants et le calcul de la pension alimentaire selon le Code des Personnes et de la Famille.</p>
-                        <a href="#" class="read-more">Lire l'article</a>
-                    </div>
-                </article>
-
-                <article class="blog-card fade-in">
-                    <div class="blog-image"></div>
-                    <div class="blog-content">
-                        <div class="blog-date">15 Décembre 2025</div>
-                        <h3>Protection des Données Personnelles : Loi Béninoise 2023</h3>
-                        <p>Comprendre vos obligations en matière de protection des données personnelles selon la loi béninoise et éviter les sanctions.</p>
-                        <a href="#" class="read-more">Lire l'article</a>
-                    </div>
-                </article>
-
-                <article class="blog-card fade-in">
-                    <div class="blog-image"></div>
-                    <div class="blog-content">
-                        <div class="blog-date">10 Décembre 2025</div>
-                        <h3>Droit des Affaires Franco-Béninois : Réussir vos Partenariats</h3>
-                        <p>Les aspects juridiques essentiels pour sécuriser vos collaborations commerciales entre la France et le Bénin dans un contexte international.</p>
-                        <a href="#" class="read-more">Lire l'article</a>
-                    </div>
-                </article>
-
-                <article class="blog-card fade-in">
-                    <div class="blog-image"></div>
-                    <div class="blog-content">
-                        <div class="blog-date">01 Décembre 2025</div>
-                        <h3>Contentieux Commercial OHADA : Stratégies de Résolution</h3>
-                        <p>Les mécanismes alternatifs de règlement des différends (arbitrage, médiation) dans l'espace OHADA pour résoudre efficacement vos litiges.</p>
-                        <a href="#" class="read-more">Lire l'article</a>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <section class="contact" id="contact">
-        <div class="contact-container">
-            <div class="contact-info fade-in">
-                <h2>Contactez-nous</h2>
-                <p>Notre équipe est à votre disposition pour répondre à vos questions et vous accompagner dans vos démarches juridiques.</p>
-
-                <div class="contact-details">
-                    <div class="contact-item">
-                        <strong>Téléphone</strong>
-                        <span>Bénin: +229 01 63 04 75 68 / +229 01 67 01 27 57<br>France: +33 6 51 04 22 82</span>
-                    </div>
-                    <div class="contact-item">
-                        <strong>Email</strong>
-                        <span>mjconseils77@gmail.com<br>mjconseils@hotmail.com</span>
-                    </div>
-                    <div class="contact-item">
-                        <strong>Adresse</strong>
-                        <span>Bénin (Siège) | Correspondant en France</span>
-                    </div>
-                    <div class="contact-item">
-                        <strong>Horaires</strong>
-                        <span>Lun-Ven : 9h00 - 18h30</span>
-                    </div>
-                </div>
-            </div>
-
-            <form class="contact-form fade-in">
-                <div class="form-group">
-                    <label for="name">Nom Complet</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="subject">Sujet</label>
-                    <input type="text" id="subject" name="subject" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" required></textarea>
-                </div>
-
-                <button type="submit" class="submit-button">Envoyer</button>
-            </form>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2026 MJ CONSEILS - Cabinet de Conseil Juridique. Tous droits réservés.</p>
-        <div class="footer-divider"></div>
-        <p>Mentions Légales | Politique de Confidentialité</p>
-    </footer>
-
-    <script>
-        // Navbar scroll effect
-        const navbar = document.getElementById('navbar');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 100) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
-
-        // Smooth scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Intersection Observer for fade-in animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -100px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-
-        // Form submission
-        document.querySelector('.contact-form').addEventListener('submit', (e) => {
-            e.preventDefault();
-            alert('Merci pour votre message ! Nous vous répondrons dans les plus brefs délais.');
-            e.target.reset();
-        });
-    </script>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MJ CONSEILS - Cabinet de Conseil Juridique</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --navy: #0a1628;
-            --deep-blue: #1a2942;
-            --gold: #c5a572;
-            --cream: #f4f1ea;
-            --white: #ffffff;
-            --light-gray: #e8e5dd;
-            --text-dark: #2c3e50;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Montserrat', sans-serif;
-            color: var(--text-dark);
-            background: var(--cream);
-            overflow-x: hidden;
-            line-height: 1.6;
-        }
-
-        /* Navigation */
-        nav {
+        /* Modal/Popup Styles */
+        .modal {
+            display: none;
             position: fixed;
-            top: 0;
+            z-index: 2000;
             left: 0;
-            right: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
             background: rgba(10, 22, 40, 0.95);
             backdrop-filter: blur(10px);
-            z-index: 1000;
-            padding: 1.5rem 5%;
-            transition: all 0.3s ease;
+            overflow-y: auto;
+            animation: fadeIn 0.3s ease;
         }
 
-        nav.scrolled {
-            padding: 1rem 5%;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
 
-        .nav-container {
-            max-width: 1400px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+        .modal.active {
+            display: block;
         }
 
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .logo img {
-            height: 50px;
-            width: auto;
-            transition: transform 0.3s ease;
-        }
-
-        .logo:hover img {
-            transform: scale(1.05);
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 3rem;
-            list-style: none;
-        }
-
-        .nav-links a {
-            color: var(--white);
-            text-decoration: none;
-            font-size: 0.9rem;
-            font-weight: 400;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            position: relative;
-            transition: color 0.3s ease;
-        }
-
-        .nav-links a::after {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            width: 0;
-            height: 1px;
-            background: var(--gold);
-            transition: width 0.3s ease;
-        }
-
-        .nav-links a:hover {
-            color: var(--gold);
-        }
-
-        .nav-links a:hover::after {
-            width: 100%;
-        }
-
-        /* Hero Section */
-        .hero {
-            height: 100vh;
-            background: linear-gradient(135deg, var(--navy) 0%, var(--deep-blue) 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: 
-                radial-gradient(circle at 20% 50%, rgba(197, 165, 114, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 80% 80%, rgba(197, 165, 114, 0.08) 0%, transparent 50%);
-            animation: shimmer 15s ease-in-out infinite;
-        }
-
-        @keyframes shimmer {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.6; }
-        }
-
-        .hero-content {
-            text-align: center;
+        .modal-content {
+            background: var(--cream);
             max-width: 900px;
-            padding: 2rem;
+            margin: 5% auto;
+            padding: 0;
             position: relative;
-            z-index: 1;
-            animation: fadeInUp 1.2s ease-out;
+            animation: slideDown 0.4s ease;
         }
 
-        @keyframes fadeInUp {
+        @keyframes slideDown {
             from {
                 opacity: 0;
-                transform: translateY(40px);
+                transform: translateY(-50px);
             }
             to {
                 opacity: 1;
@@ -1114,504 +706,111 @@
             }
         }
 
-        .hero h1 {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 4.5rem;
-            font-weight: 300;
+        .modal-header {
+            background: linear-gradient(135deg, var(--navy) 0%, var(--deep-blue) 100%);
+            padding: 3rem;
             color: var(--white);
-            margin-bottom: 1.5rem;
-            line-height: 1.2;
-            letter-spacing: 3px;
+            position: relative;
         }
 
-        .hero h1 span {
-            display: block;
-            font-weight: 600;
+        .modal-close {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            font-size: 2rem;
             color: var(--gold);
-            font-size: 5.5rem;
-            margin-top: 0.5rem;
+            cursor: pointer;
+            background: none;
+            border: none;
+            transition: transform 0.3s ease;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
-        .hero p {
-            font-size: 1.2rem;
-            color: var(--cream);
-            margin-bottom: 3rem;
-            font-weight: 300;
-            letter-spacing: 1px;
+        .modal-close:hover {
+            transform: rotate(90deg);
         }
 
-        .cta-button {
-            display: inline-block;
-            padding: 1.2rem 3rem;
-            background: transparent;
-            border: 2px solid var(--gold);
+        .modal-date {
             color: var(--gold);
-            text-decoration: none;
-            font-weight: 500;
+            font-size: 0.9rem;
             letter-spacing: 2px;
             text-transform: uppercase;
-            font-size: 0.9rem;
-            transition: all 0.4s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .cta-button::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: var(--gold);
-            transition: left 0.4s ease;
-            z-index: -1;
-        }
-
-        .cta-button:hover {
-            color: var(--navy);
-        }
-
-        .cta-button:hover::before {
-            left: 0;
-        }
-
-        /* Expertise Section */
-        .expertise {
-            padding: 8rem 5%;
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-
-        .section-title {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 3.5rem;
-            font-weight: 600;
-            text-align: center;
             margin-bottom: 1rem;
-            color: var(--navy);
-            position: relative;
         }
 
-        .section-subtitle {
-            text-align: center;
-            color: var(--gold);
-            font-size: 1rem;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-            margin-bottom: 5rem;
-            font-weight: 400;
-        }
-
-        .expertise-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 3rem;
-            margin-top: 4rem;
-        }
-
-        .expertise-card {
-            background: var(--white);
-            padding: 3rem 2rem;
-            border-top: 3px solid var(--gold);
-            transition: all 0.4s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .expertise-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 0;
-            background: linear-gradient(135deg, var(--navy) 0%, var(--deep-blue) 100%);
-            transition: height 0.4s ease;
-            z-index: 0;
-        }
-
-        .expertise-card:hover::before {
-            height: 100%;
-        }
-
-        .expertise-card > * {
-            position: relative;
-            z-index: 1;
-        }
-
-        .expertise-card h3 {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 1.8rem;
-            margin-bottom: 1.5rem;
-            color: var(--navy);
-            font-weight: 600;
-            transition: color 0.4s ease;
-        }
-
-        .expertise-card p {
-            color: var(--text-dark);
-            line-height: 1.8;
-            font-size: 0.95rem;
-            transition: color 0.4s ease;
-        }
-
-        .expertise-card:hover h3,
-        .expertise-card:hover p {
-            color: var(--white);
-        }
-
-        /* About Section */
-        .about {
-            background: var(--navy);
-            padding: 8rem 5%;
-            color: var(--white);
-        }
-
-        .about-container {
-            max-width: 1400px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 5rem;
-            align-items: center;
-        }
-
-        .about-content h2 {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 3.5rem;
-            margin-bottom: 2rem;
-            color: var(--gold);
-            font-weight: 600;
-        }
-
-        .about-content p {
-            font-size: 1.05rem;
-            line-height: 2;
-            margin-bottom: 1.5rem;
-            color: var(--cream);
-            font-weight: 300;
-        }
-
-        .about-stats {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        .stat {
-            text-align: center;
-            padding: 2rem 1rem;
-            border: 1px solid rgba(197, 165, 114, 0.3);
-        }
-
-        .stat-number {
+        .modal-title {
             font-family: 'Cormorant Garamond', serif;
             font-size: 3rem;
-            color: var(--gold);
             font-weight: 600;
-            display: block;
-            margin-bottom: 0.5rem;
-        }
-
-        .stat-label {
-            font-size: 0.9rem;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            color: var(--cream);
-        }
-
-        /* Blog Section */
-        .blog {
-            padding: 8rem 5%;
-            background: var(--cream);
-        }
-
-        .blog-container {
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-
-        .blog-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-            gap: 3rem;
-            margin-top: 4rem;
-        }
-
-        .blog-card {
-            background: var(--white);
-            overflow: hidden;
-            transition: transform 0.4s ease, box-shadow 0.4s ease;
-            cursor: pointer;
-        }
-
-        .blog-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-        }
-
-        .blog-image {
-            width: 100%;
-            height: 250px;
-            background: linear-gradient(135deg, var(--deep-blue) 0%, var(--navy) 100%);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .blog-image::after {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 60px;
-            height: 60px;
-            border: 2px solid var(--gold);
-            border-radius: 50%;
-        }
-
-        .blog-content {
-            padding: 2rem;
-        }
-
-        .blog-date {
-            color: var(--gold);
-            font-size: 0.85rem;
-            letter-spacing: 1px;
-            text-transform: uppercase;
+            line-height: 1.3;
             margin-bottom: 1rem;
         }
 
-        .blog-card h3 {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 1.6rem;
-            margin-bottom: 1rem;
-            color: var(--navy);
-            font-weight: 600;
-            line-height: 1.4;
-        }
-
-        .blog-card p {
-            color: var(--text-dark);
-            line-height: 1.8;
-            margin-bottom: 1.5rem;
-        }
-
-        .read-more {
-            color: var(--gold);
-            text-decoration: none;
-            font-weight: 500;
-            letter-spacing: 1px;
-            font-size: 0.9rem;
-            text-transform: uppercase;
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            transition: gap 0.3s ease;
-        }
-
-        .read-more:hover {
-            gap: 1rem;
-        }
-
-        .read-more::after {
-            content: '→';
-        }
-
-        /* Contact Section */
-        .contact {
-            background: var(--deep-blue);
-            padding: 8rem 5%;
-            color: var(--white);
-        }
-
-        .contact-container {
-            max-width: 1400px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 5rem;
-        }
-
-        .contact-info h2 {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 3.5rem;
-            margin-bottom: 2rem;
-            color: var(--gold);
-            font-weight: 600;
-        }
-
-        .contact-info p {
-            font-size: 1.05rem;
-            line-height: 2;
-            margin-bottom: 3rem;
-            color: var(--cream);
-        }
-
-        .contact-details {
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-        }
-
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 1.5rem;
-            padding: 1rem 0;
-            border-bottom: 1px solid rgba(197, 165, 114, 0.2);
-        }
-
-        .contact-item strong {
-            color: var(--gold);
-            min-width: 120px;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            font-size: 0.85rem;
-        }
-
-        .contact-form {
-            background: rgba(255, 255, 255, 0.05);
+        .modal-body {
             padding: 3rem;
-            backdrop-filter: blur(10px);
+            background: var(--white);
         }
 
-        .form-group {
-            margin-bottom: 2rem;
+        .modal-body h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2rem;
+            color: var(--navy);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
         }
 
-        .form-group label {
-            display: block;
-            margin-bottom: 0.5rem;
-            color: var(--gold);
-            font-size: 0.9rem;
-            letter-spacing: 1px;
-            text-transform: uppercase;
+        .modal-body p {
+            line-height: 2;
+            margin-bottom: 1.5rem;
+            color: var(--text-dark);
+            font-size: 1.05rem;
         }
 
-        .form-group input,
-        .form-group textarea {
-            width: 100%;
-            padding: 1rem;
-            background: rgba(255, 255, 255, 0.1);
-            border: 1px solid rgba(197, 165, 114, 0.3);
-            color: var(--white);
-            font-family: 'Montserrat', sans-serif;
-            font-size: 1rem;
-            transition: all 0.3s ease;
+        .modal-body ul {
+            margin: 1.5rem 0;
+            padding-left: 2rem;
         }
 
-        .form-group input:focus,
-        .form-group textarea:focus {
-            outline: none;
-            border-color: var(--gold);
-            background: rgba(255, 255, 255, 0.15);
+        .modal-body li {
+            line-height: 2;
+            margin-bottom: 0.8rem;
+            color: var(--text-dark);
         }
 
-        .form-group textarea {
-            resize: vertical;
-            min-height: 150px;
-        }
-
-        .submit-button {
-            width: 100%;
-            padding: 1.2rem;
-            background: var(--gold);
-            border: none;
+        .modal-body strong {
             color: var(--navy);
             font-weight: 600;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            cursor: pointer;
-            transition: all 0.3s ease;
         }
 
-        .submit-button:hover {
-            background: var(--white);
-            transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-        }
-
-        /* Footer */
-        footer {
-            background: var(--navy);
-            padding: 3rem 5%;
-            text-align: center;
-            color: var(--cream);
-        }
-
-        footer p {
-            font-size: 0.9rem;
-            letter-spacing: 1px;
-        }
-
-        .footer-divider {
+        .article-divider {
             width: 100px;
-            height: 1px;
+            height: 2px;
             background: var(--gold);
-            margin: 2rem auto;
-        }
-
-        /* Responsive */
-        @media (max-width: 1024px) {
-            .about-container,
-            .contact-container {
-                grid-template-columns: 1fr;
-                gap: 3rem;
-            }
-
-            .hero h1 {
-                font-size: 3rem;
-            }
-
-            .hero h1 span {
-                font-size: 4rem;
-            }
-
-            .nav-links {
-                gap: 1.5rem;
-            }
+            margin: 2rem 0;
         }
 
         @media (max-width: 768px) {
-            .nav-links {
-                display: none;
+            .modal-content {
+                margin: 2% auto;
+                width: 95%;
             }
 
-            .hero h1 {
-                font-size: 2.5rem;
+            .modal-header {
+                padding: 2rem;
             }
 
-            .hero h1 span {
-                font-size: 3rem;
+            .modal-title {
+                font-size: 2rem;
             }
 
-            .section-title {
-                font-size: 2.5rem;
+            .modal-body {
+                padding: 2rem;
             }
-
-            .expertise-grid,
-            .blog-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .about-stats {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        /* Scroll animations */
-        .fade-in {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: opacity 0.8s ease, transform 0.8s ease;
-        }
-
-        .fade-in.visible {
-            opacity: 1;
-            transform: translateY(0);
         }
     </style>
 </head>
@@ -1701,7 +900,87 @@
             <h2 class="section-title">Notre Blog</h2>
 
             <div class="blog-grid">
-                <article class="blog-card fade-in">
+                <article class="blog-card fade-in" data-article="squatters-france">
+                    <div class="blog-image"></div>
+                    <div class="blog-content">
+                        <div class="blog-date">20 Février 2026</div>
+                        <h3>Expulser un Squatter en France : Procédures et Recours</h3>
+                        <p>Guide complet pour reprendre possession de votre bien occupé illégalement en France. Procédures légales, délais et stratégies efficaces pour expulser les squatters.</p>
+                        <a href="#" class="read-more">Lire l'article</a>
+                    </div>
+                </article>
+
+                <article class="blog-card fade-in" data-article="succession-france">
+                    <div class="blog-image"></div>
+                    <div class="blog-content">
+                        <div class="blog-date">19 Février 2026</div>
+                        <h3>Succession en France : Droits et Démarches pour les Béninois</h3>
+                        <p>Tout savoir sur les successions en France pour les ressortissants béninois : fiscalité, réserve héréditaire, transmission internationale et optimisation.</p>
+                        <a href="#" class="read-more">Lire l'article</a>
+                    </div>
+                </article>
+
+                <article class="blog-card fade-in" data-article="retraite-france">
+                    <div class="blog-image"></div>
+                    <div class="blog-content">
+                        <div class="blog-date">18 Février 2026</div>
+                        <h3>Réforme des Retraites en France 2026 : Impact pour les Africains</h3>
+                        <p>Les nouvelles règles de la réforme des retraites françaises et leurs conséquences pour les travailleurs africains ayant cotisé en France.</p>
+                        <a href="#" class="read-more">Lire l'article</a>
+                    </div>
+                </article>
+
+                <article class="blog-card fade-in" data-article="immigration-france">
+                    <div class="blog-image"></div>
+                    <div class="blog-content">
+                        <div class="blog-date">17 Février 2026</div>
+                        <h3>Immigration en France : Titres de Séjour et Droits des Béninois</h3>
+                        <p>Guide pratique sur l'immigration en France : types de titres de séjour, procédures, renouvellement, naturalisation et recours en cas de refus.</p>
+                        <a href="#" class="read-more">Lire l'article</a>
+                    </div>
+                </article>
+
+                <article class="blog-card fade-in" data-article="droit-image">
+                    <div class="blog-image"></div>
+                    <div class="blog-content">
+                        <div class="blog-date">15 Février 2026</div>
+                        <h3>Droit à l'Image au Bénin : Protéger votre Image et vos Droits</h3>
+                        <p>Comprendre vos droits sur votre image, les autorisations nécessaires, et comment réagir en cas d'utilisation non autorisée de votre image sur internet ou ailleurs.</p>
+                        <a href="#" class="read-more">Lire l'article</a>
+                    </div>
+                </article>
+
+                <article class="blog-card fade-in" data-article="reseaux-sociaux">
+                    <div class="blog-image"></div>
+                    <div class="blog-content">
+                        <div class="blog-date">14 Février 2026</div>
+                        <h3>Droit du Numérique : Réseaux Sociaux et Responsabilité Juridique</h3>
+                        <p>Les règles juridiques à connaître sur les réseaux sociaux : diffamation, cyberharcèlement, fake news, e-réputation et protection en ligne au Bénin.</p>
+                        <a href="#" class="read-more">Lire l'article</a>
+                    </div>
+                </article>
+
+                <article class="blog-card fade-in" data-article="ia-optimisation">
+                    <div class="blog-image"></div>
+                    <div class="blog-content">
+                        <div class="blog-date">12 Février 2026</div>
+                        <h3>IA et Justice : Optimiser le Droit pour Avocats et Tribunaux</h3>
+                        <p>Comment l'intelligence artificielle révolutionne la pratique du droit et améliore l'efficacité des tribunaux. Les opportunités et défis de cette transformation numérique.</p>
+                        <a href="#" class="read-more">Lire l'article</a>
+                    </div>
+                </article>
+
+                <article class="blog-card fade-in" data-article="licenciement">
+                    <div class="blog-image"></div>
+                    <div class="blog-content">
+                        <div class="blog-date">10 Février 2026</div>
+                        <h3>Licenciement au Bénin : Droits des Travailleurs et Recours</h3>
+                        <p>Tout ce que les salariés doivent savoir sur le licenciement : procédures légales, indemnités, recours possibles et protection contre les abus.</p>
+                        <a href="#" class="read-more">Lire l'article</a>
+                    </div>
+                </article>
+
+                <article class="blog-card fade-in" data-article="ia-droit">
                     <div class="blog-image"></div>
                     <div class="blog-content">
                         <div class="blog-date">09 Février 2026</div>
@@ -1711,7 +990,7 @@
                     </div>
                 </article>
 
-                <article class="blog-card fade-in">
+                <article class="blog-card fade-in" data-article="ohada">
                     <div class="blog-image"></div>
                     <div class="blog-content">
                         <div class="blog-date">05 Février 2026</div>
@@ -1721,7 +1000,7 @@
                     </div>
                 </article>
 
-                <article class="blog-card fade-in">
+                <article class="blog-card fade-in" data-article="travail">
                     <div class="blog-image"></div>
                     <div class="blog-content">
                         <div class="blog-date">28 Janvier 2026</div>
@@ -1731,7 +1010,7 @@
                     </div>
                 </article>
 
-                <article class="blog-card fade-in">
+                <article class="blog-card fade-in" data-article="immobilier">
                     <div class="blog-image"></div>
                     <div class="blog-content">
                         <div class="blog-date">20 Janvier 2026</div>
@@ -1741,7 +1020,7 @@
                     </div>
                 </article>
 
-                <article class="blog-card fade-in">
+                <article class="blog-card fade-in" data-article="succession">
                     <div class="blog-image"></div>
                     <div class="blog-content">
                         <div class="blog-date">15 Janvier 2026</div>
@@ -1751,7 +1030,7 @@
                     </div>
                 </article>
 
-                <article class="blog-card fade-in">
+                <article class="blog-card fade-in" data-article="cedeao">
                     <div class="blog-image"></div>
                     <div class="blog-content">
                         <div class="blog-date">08 Janvier 2026</div>
@@ -1761,7 +1040,7 @@
                     </div>
                 </article>
 
-                <article class="blog-card fade-in">
+                <article class="blog-card fade-in" data-article="divorce">
                     <div class="blog-image"></div>
                     <div class="blog-content">
                         <div class="blog-date">22 Décembre 2025</div>
@@ -1771,7 +1050,7 @@
                     </div>
                 </article>
 
-                <article class="blog-card fade-in">
+                <article class="blog-card fade-in" data-article="donnees">
                     <div class="blog-image"></div>
                     <div class="blog-content">
                         <div class="blog-date">15 Décembre 2025</div>
@@ -1781,7 +1060,7 @@
                     </div>
                 </article>
 
-                <article class="blog-card fade-in">
+                <article class="blog-card fade-in" data-article="franco-benin">
                     <div class="blog-image"></div>
                     <div class="blog-content">
                         <div class="blog-date">10 Décembre 2025</div>
@@ -1791,7 +1070,7 @@
                     </div>
                 </article>
 
-                <article class="blog-card fade-in">
+                <article class="blog-card fade-in" data-article="contentieux">
                     <div class="blog-image"></div>
                     <div class="blog-content">
                         <div class="blog-date">01 Décembre 2025</div>
@@ -1856,6 +1135,18 @@
         </div>
     </section>
 
+    <!-- Modal for Articles -->
+    <div id="articleModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="modal-close">&times;</button>
+                <div class="modal-date" id="modalDate"></div>
+                <h2 class="modal-title" id="modalTitle"></h2>
+            </div>
+            <div class="modal-body" id="modalBody"></div>
+        </div>
+    </div>
+
     <footer>
         <p>&copy; 2026 MJ CONSEILS - Cabinet de Conseil Juridique. Tous droits réservés.</p>
         <div class="footer-divider"></div>
@@ -1908,6 +1199,2208 @@
             e.preventDefault();
             alert('Merci pour votre message ! Nous vous répondrons dans les plus brefs délais.');
             e.target.reset();
+        });
+
+        // Article Modal Functionality
+        const articles = {
+            'squatters-france': {
+                date: '20 Février 2026',
+                title: 'Expulser un Squatter en France : Procédures et Recours',
+                content: `
+                    <p>La France connaît un problème croissant de squats illégaux. Propriétaires béninois possédant un bien en France, voici comment reprendre possession de votre logement occupé illégalement.</p>
+
+                    <h3>1. Qu'est-ce que le Squat ?</h3>
+                    <p>Le squat est l'occupation sans droit ni titre d'un logement qui ne vous appartient pas. Deux situations :</p>
+                    <ul>
+                        <li><strong>Domicile</strong> : vous habitez le logement → protection très forte</li>
+                        <li><strong>Non-domicile</strong> : logement inoccupé, résidence secondaire → protection moindre</li>
+                    </ul>
+                    <p><strong>Attention</strong> : la loi française protège le domicile de manière absolue, même s'il s'agit de squatters !</p>
+                    <div class="article-divider"></div>
+
+                    <h3>2. Loi Anti-Squat de 2023</h3>
+                    <p>La loi du 27 juillet 2023 a renforcé la protection des propriétaires :</p>
+                    <ul>
+                        <li>Procédure d'expulsion accélérée (48-72 heures dans certains cas)</li>
+                        <li>Sanctions pénales aggravées : jusqu'à 3 ans de prison et 45 000 € d'amende</li>
+                        <li>Possibilité d'intervention immédiate des forces de l'ordre</li>
+                        <li>Protection des résidences secondaires</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>3. Que Faire Immédiatement ?</h3>
+
+                    <p><strong>Dans les 48 Premières Heures :</strong></p>
+                    <ul>
+                        <li><strong>Déposez plainte</strong> : commissariat le plus proche pour violation de domicile</li>
+                        <li><strong>Appelez la police</strong> : intervention possible si moins de 48h d'occupation</li>
+                        <li><strong>Rassemblez les preuves</strong> : titre de propriété, factures EDF/eau à votre nom, témoignages de voisins</li>
+                        <li><strong>Ne prenez PAS la justice en main</strong> : coupure d'eau/électricité, changement de serrures = délit de voies de fait</li>
+                    </ul>
+
+                    <p><strong>Si plus de 48 heures sont écoulées :</strong></p>
+                    <p>Les squatters peuvent se prévaloir d'une "domiciliation" → nécessité d'une procédure judiciaire.</p>
+                    <div class="article-divider"></div>
+
+                    <h3>4. Procédure d'Expulsion Accélérée</h3>
+
+                    <p><strong>Étape 1 : Assignation en Référé (Urgence)</strong></p>
+                    <ul>
+                        <li>Saisir le tribunal judiciaire en référé</li>
+                        <li>Délai de traitement : 2 semaines à 1 mois</li>
+                        <li>Le juge peut ordonner l'expulsion immédiate</li>
+                    </ul>
+
+                    <p><strong>Étape 2 : Ordonnance d'Expulsion</strong></p>
+                    <ul>
+                        <li>Si le juge reconnaît l'occupation illégale, il délivre une ordonnance</li>
+                        <li>Cette ordonnance est exécutoire immédiatement</li>
+                        <li>Pas d'appel suspensif possible</li>
+                    </ul>
+
+                    <p><strong>Étape 3 : Intervention d'un Huissier</strong></p>
+                    <ul>
+                        <li>Commandement de quitter les lieux</li>
+                        <li>Si refus : expulsion par la force publique</li>
+                        <li>Délai : quelques jours à 2 semaines</li>
+                    </ul>
+
+                    <p><strong>Durée Totale :</strong> 1 à 3 mois en moyenne (vs 1-2 ans avant la loi de 2023)</p>
+                    <div class="article-divider"></div>
+
+                    <h3>5. Trêve Hivernale : Exception Majeure</h3>
+                    <p><strong>Du 1er novembre au 31 mars</strong> : interdiction d'expulser, sauf :</p>
+                    <ul>
+                        <li>Squat de moins de 48 heures</li>
+                        <li>Péril imminent (danger pour le bâtiment)</li>
+                        <li>Relogement proposé aux squatters</li>
+                    </ul>
+                    <p><strong>Conseil</strong> : agir avant le 1er novembre ou attendre le 1er avril.</p>
+                    <div class="article-divider"></div>
+
+                    <h3>6. Sanctions Pénales contre les Squatters</h3>
+                    <p>Le squat est un délit pénal sanctionné par :</p>
+                    <ul>
+                        <li><strong>Violation de domicile</strong> : 1 an de prison et 15 000 € d'amende</li>
+                        <li><strong>Squat aggravé</strong> (avec dégradations) : 3 ans et 45 000 €</li>
+                        <li><strong>Organisation de squat</strong> : 7 ans et 100 000 €</li>
+                        <li><strong>Refus de quitter après injonction</strong> : 3 ans et 45 000 €</li>
+                    </ul>
+                    <p>En pratique, peu de squatters sont condamnés, d'où l'importance de la procédure civile.</p>
+                    <div class="article-divider"></div>
+
+                    <h3>7. Protection Préventive</h3>
+
+                    <p><strong>Pour éviter le squat :</strong></p>
+                    <ul>
+                        <li>Ne laissez jamais un bien totalement vide</li>
+                        <li>Installez une alarme connectée</li>
+                        <li>Demandez à un voisin de surveiller</li>
+                        <li>Changez régulièrement les serrures</li>
+                        <li>Installez des barres anti-effraction aux fenêtres</li>
+                        <li>Affichez une présence (courrier relevé, lumières programmées)</li>
+                        <li>Souscrivez une assurance "garantie squat"</li>
+                    </ul>
+
+                    <p><strong>Dispositifs Spécifiques :</strong></p>
+                    <ul>
+                        <li><strong>Gardiennage</strong> : personne de confiance occupant temporairement</li>
+                        <li><strong>Convention d'occupation précaire</strong> : bail court terme (< 12 mois) pour empêcher le squat</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>8. Coûts et Délais Réels</h3>
+
+                    <p><strong>Coûts :</strong></p>
+                    <ul>
+                        <li>Avocat : 1 500 à 3 000 €</li>
+                        <li>Huissier : 500 à 1 500 €</li>
+                        <li>Frais de procédure : 300 à 800 €</li>
+                        <li>Remise en état du logement : variable (souvent plusieurs milliers d'euros)</li>
+                    </ul>
+
+                    <p><strong>Délais :</strong></p>
+                    <ul>
+                        <li>Procédure accélérée : 1 à 3 mois</li>
+                        <li>Procédure classique (si complexe) : 6 à 12 mois</li>
+                        <li>Avec trêve hivernale : +5 mois minimum</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>9. Cas Particulier : Squat de Résidence Principale</h3>
+                    <p>Si le squat a lieu pendant vos vacances dans votre résidence principale :</p>
+                    <ul>
+                        <li>Intervention policière immédiate possible</li>
+                        <li>Pas de trêve hivernale applicable</li>
+                        <li>Procédure ultra-rapide (quelques jours)</li>
+                        <li>Protection maximale de la loi</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>10. Recours après Expulsion</h3>
+                    <p>Une fois les squatters expulsés :</p>
+                    <ul>
+                        <li><strong>Constat d'huissier</strong> : pour les dégradations</li>
+                        <li><strong>Action en dommages et intérêts</strong> : pour préjudice matériel et moral</li>
+                        <li><strong>Constitution de partie civile</strong> : dans la procédure pénale</li>
+                    </ul>
+                    <p><em>Réalité</em> : les squatters sont souvent insolvables, donc difficile de récupérer de l'argent.</p>
+                    <div class="article-divider"></div>
+
+                    <h3>11. Particularités pour Propriétaires Béninois</h3>
+
+                    <p><strong>Difficulté spécifique :</strong></p>
+                    <p>Gérer un squat depuis le Bénin est complexe. Solutions :</p>
+                    <ul>
+                        <li><strong>Mandat de gestion</strong> : confier le bien à une agence immobilière</li>
+                        <li><strong>Procuration</strong> : donner pouvoir à une personne de confiance en France</li>
+                        <li><strong>Avocat spécialisé</strong> : cabinet français expert en droit immobilier</li>
+                        <li><strong>Notre correspondant en France</strong> : MJ CONSEILS coordonne l'action via notre réseau</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>Conclusion</h3>
+                    <p>La loi anti-squat de 2023 a amélioré la situation, mais la procédure reste contraignante. La rapidité d'action dans les 48 premières heures est cruciale. Pour les propriétaires béninois, un accompagnement juridique franco-béninois est indispensable.</p>
+                    <p><strong>MJ CONSEILS</strong>, grâce à son correspondant en France, vous accompagne dans toutes les démarches : dépôt de plainte, procédure d'expulsion, suivi avec huissier et remise en état du bien.</p>
+                    <p><strong>Votre bien en France est squatté ? Contactez-nous immédiatement : chaque jour compte !</strong></p>
+                `
+            },
+            'succession-france': {
+                date: '19 Février 2026',
+                title: 'Succession en France : Droits et Démarches pour les Béninois',
+                content: `
+                    <p>De nombreux Béninois possèdent des biens en France ou ont de la famille française. Comprendre les règles successorales françaises est essentiel pour organiser la transmission de votre patrimoine.</p>
+
+                    <h3>1. Principes de Base du Droit Français des Successions</h3>
+
+                    <p><strong>A. Qui Hérite ?</strong></p>
+                    <p>En l'absence de testament, l'ordre des héritiers est :</p>
+                    <ul>
+                        <li><strong>1er ordre</strong> : Enfants et descendants (petits-enfants si les enfants sont décédés)</li>
+                        <li><strong>2ème ordre</strong> : Parents, frères et sœurs</li>
+                        <li><strong>3ème ordre</strong> : Ascendants autres que les parents (grands-parents)</li>
+                        <li><strong>4ème ordre</strong> : Collatéraux ordinaires (oncles, tantes, cousins)</li>
+                    </ul>
+
+                    <p><strong>B. Le Conjoint Survivant</strong></p>
+                    <p>Protection renforcée en droit français :</p>
+                    <ul>
+                        <li>Avec enfants communs : choix entre usufruit de la totalité ou 1/4 en pleine propriété</li>
+                        <li>Avec enfants d'un premier lit : 1/4 en pleine propriété</li>
+                        <li>Sans enfants : totalité de la succession (sauf droits des parents)</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>2. La Réserve Héréditaire</h3>
+                    <p>Contrairement au droit anglo-saxon, on ne peut pas totalement déshériter ses enfants en France :</p>
+                    <ul>
+                        <li><strong>1 enfant</strong> : réserve de 1/2 du patrimoine</li>
+                        <li><strong>2 enfants</strong> : réserve de 2/3 (1/3 chacun)</li>
+                        <li><strong>3 enfants ou +</strong> : réserve de 3/4 (répartie entre eux)</li>
+                    </ul>
+                    <p>Le reste constitue la <strong>quotité disponible</strong> que vous pouvez léguer librement.</p>
+                    <div class="article-divider"></div>
+
+                    <h3>3. Succession Internationale : Quel Droit s'Applique ?</h3>
+
+                    <p><strong>Règlement Européen de 2015 :</strong></p>
+                    <p>Pour les décès depuis août 2015, c'est la <strong>loi du pays de résidence habituelle</strong> du défunt qui s'applique.</p>
+
+                    <p><strong>Exemples :</strong></p>
+                    <ul>
+                        <li>Béninois résidant au Bénin avec biens en France → droit béninois s'applique</li>
+                        <li>Béninois résidant en France → droit français s'applique (sauf choix contraire)</li>
+                    </ul>
+
+                    <p><strong>Possibilité de Choisir :</strong></p>
+                    <p>Vous pouvez choisir par testament la loi de votre nationalité :</p>
+                    <ul>
+                        <li>"Je choisis que ma succession soit régie par le droit béninois"</li>
+                        <li>Permet d'éviter la réserve héréditaire française si nécessaire</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>4. Fiscalité Successorale en France</h3>
+
+                    <p><strong>A. Droits de Succession</strong></p>
+                    <p>La France impose les successions, contrairement au Bénin :</p>
+
+                    <p><strong>Abattements (2026) :</strong></p>
+                    <ul>
+                        <li>Enfant : 100 000 € (pas d'impôt en dessous)</li>
+                        <li>Conjoint/partenaire PACS : exonération totale</li>
+                        <li>Frère/sœur : 15 932 €</li>
+                        <li>Neveu/nièce : 7 967 €</li>
+                        <li>Autre : 1 594 €</li>
+                    </ul>
+
+                    <p><strong>Barème (après abattement) :</strong></p>
+                    <ul>
+                        <li>Ligne directe (enfants) : 5% à 45% progressif</li>
+                        <li>Frères/sœurs : 35% à 45%</li>
+                        <li>Autres : 55% à 60%</li>
+                    </ul>
+
+                    <p><strong>B. Optimisation Fiscale</strong></p>
+                    <ul>
+                        <li>Donations de son vivant (tous les 15 ans, abattements renouvelés)</li>
+                        <li>Assurance-vie (fiscalité avantageuse)</li>
+                        <li>Démembrement de propriété (nue-propriété aux enfants)</li>
+                        <li>SCI (Société Civile Immobilière) pour les biens immobiliers</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>5. La Procédure de Succession en France</h3>
+
+                    <p><strong>Étape 1 : Certificat de Décès</strong></p>
+                    <ul>
+                        <li>Délivré par la mairie du lieu de décès</li>
+                        <li>Gratuit</li>
+                    </ul>
+
+                    <p><strong>Étape 2 : Recherche de Testament</strong></p>
+                    <ul>
+                        <li>Consultation du Fichier Central des Dispositions de Dernières Volontés (FCDDV)</li>
+                        <li>Démarche par notaire</li>
+                    </ul>
+
+                    <p><strong>Étape 3 : Acte de Notoriété</strong></p>
+                    <ul>
+                        <li>Document établissant la qualité d'héritier</li>
+                        <li>Établi par notaire (500 à 1 000 €)</li>
+                        <li>Nécessaire pour débloquer comptes bancaires</li>
+                    </ul>
+
+                    <p><strong>Étape 4 : Inventaire des Biens</strong></p>
+                    <ul>
+                        <li>Recenser tous les biens (immobilier, comptes, placements, objets de valeur)</li>
+                        <li>Identifier les dettes</li>
+                    </ul>
+
+                    <p><strong>Étape 5 : Déclaration de Succession</strong></p>
+                    <ul>
+                        <li>À déposer aux impôts dans les <strong>6 mois</strong> (France) ou <strong>12 mois</strong> (étranger)</li>
+                        <li>Pénalités en cas de retard : 10% à 40%</li>
+                    </ul>
+
+                    <p><strong>Étape 6 : Paiement des Droits</strong></p>
+                    <ul>
+                        <li>Comptant ou facilités de paiement (jusqu'à 3 ans)</li>
+                        <li>Hypothèque possible sur biens immobiliers</li>
+                    </ul>
+
+                    <p><strong>Étape 7 : Partage</strong></p>
+                    <ul>
+                        <li>Acte de partage signé par tous les héritiers</li>
+                        <li>Si désaccord : saisie du tribunal</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>6. Frais de Succession</h3>
+
+                    <p><strong>Frais de Notaire :</strong></p>
+                    <ul>
+                        <li>Succession simple : 1 000 à 3 000 €</li>
+                        <li>Succession complexe avec immobilier : 2% à 4% de l'actif</li>
+                    </ul>
+
+                    <p><strong>Droits de Succession :</strong></p>
+                    <ul>
+                        <li>Variables selon le lien de parenté et montant hérité</li>
+                    </ul>
+
+                    <p><strong>Total :</strong> Comptez 5% à 15% de l'actif net en moyenne</p>
+                    <div class="article-divider"></div>
+
+                    <h3>7. Testament en France</h3>
+
+                    <p><strong>Types de Testaments :</strong></p>
+                    <ul>
+                        <li><strong>Testament olographe</strong> : écrit, daté et signé de la main du testateur (gratuit mais risque de contestation)</li>
+                        <li><strong>Testament authentique</strong> : rédigé par notaire en présence de témoins (250 à 500 €, sécurisé)</li>
+                        <li><strong>Testament mystique</strong> : remis cacheté au notaire (rare)</li>
+                    </ul>
+
+                    <p><strong>Que peut-on Faire par Testament ?</strong></p>
+                    <ul>
+                        <li>Répartir la quotité disponible</li>
+                        <li>Avantager un enfant (dans la limite de la quotité)</li>
+                        <li>Léguer à des tiers</li>
+                        <li>Désigner un exécuteur testamentaire</li>
+                        <li>Reconnaître un enfant</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>8. Succession avec Biens au Bénin et en France</h3>
+
+                    <p><strong>Problématique :</strong></p>
+                    <p>Biens dans deux pays = deux procédures de succession potentielles.</p>
+
+                    <p><strong>Solutions :</strong></p>
+                    <ul>
+                        <li><strong>Testament international</strong> : valable dans plusieurs pays</li>
+                        <li><strong>Coordination entre notaires</strong> : notaire français et béninois travaillent ensemble</li>
+                        <li><strong>Certificat successoral européen</strong> : facilite les démarches transfrontalières</li>
+                    </ul>
+
+                    <p><strong>Convention Fiscale Franco-Béninoise :</strong></p>
+                    <p>Évite la double imposition, mais attention : le Bénin n'impose pas les successions, donc pas de crédit d'impôt à récupérer.</p>
+                    <div class="article-divider"></div>
+
+                    <h3>9. Accepter ou Renoncer à la Succession ?</h3>
+
+                    <p><strong>Trois Options :</strong></p>
+                    <ul>
+                        <li><strong>Acceptation pure et simple</strong> : vous héritez de tout (actif + dettes)</li>
+                        <li><strong>Acceptation à concurrence de l'actif net</strong> : vous ne payez les dettes que jusqu'à hauteur de l'actif reçu (protection)</li>
+                        <li><strong>Renonciation</strong> : vous n'héritez de rien (utile si succession lourdement endettée)</li>
+                    </ul>
+
+                    <p><strong>Délai :</strong> 4 mois pour choisir (peut être prorogé)</p>
+                    <div class="article-divider"></div>
+
+                    <h3>10. Cas Particuliers</h3>
+
+                    <p><strong>A. Concubinage</strong></p>
+                    <ul>
+                        <li>Le concubin n'hérite de RIEN (contrairement au conjoint ou partenaire PACS)</li>
+                        <li>Solution : testament ou donation entre vifs</li>
+                        <li>Mais attention : droits de succession à 60% !</li>
+                    </ul>
+
+                    <p><strong>B. Enfants Nés Hors Mariage</strong></p>
+                    <ul>
+                        <li>Stricte égalité avec les enfants légitimes</li>
+                        <li>Reconnaissance nécessaire</li>
+                    </ul>
+
+                    <p><strong>C. Adoption</strong></p>
+                    <ul>
+                        <li><strong>Adoption plénière</strong> : droits identiques aux enfants biologiques</li>
+                        <li><strong>Adoption simple</strong> : droits sur les deux familles (adoptive et biologique)</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>11. Conseils pour Béninois Possédant des Biens en France</h3>
+                    <ul>
+                        <li><strong>Faites un testament</strong> : évitez les conflits et choisissez le droit applicable</li>
+                        <li><strong>Anticipez fiscalement</strong> : donations de votre vivant, assurance-vie</li>
+                        <li><strong>Informez vos proches</strong> : liste des biens, coordonnées du notaire</li>
+                        <li><strong>Consultez un avocat franco-béninois</strong> : expertise binationale indispensable</li>
+                        <li><strong>Organisez une SCI</strong> : si vous avez de l'immobilier en France</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>Conclusion</h3>
+                    <p>La succession franco-béninoise est complexe : deux droits différents, fiscalité lourde, procédures à distance. Une planification anticipée permet d'optimiser la transmission et de protéger vos héritiers.</p>
+                    <p><strong>MJ CONSEILS</strong>, avec son réseau franco-béninois, vous accompagne dans la rédaction de testaments internationaux, l'optimisation fiscale de votre patrimoine, et le règlement de successions transfrontalières.</p>
+                    <p><strong>Vous possédez des biens en France ? Anticipez dès maintenant. Contactez-nous pour un audit successoral.</strong></p>
+                `
+            },
+            'retraite-france': {
+                date: '18 Février 2026',
+                title: 'Réforme des Retraites en France 2026 : Impact pour les Africains',
+                content: `
+                    <p>La réforme des retraites françaises modifie profondément les règles. Pour les travailleurs africains ayant cotisé en France, voici ce qui change et comment faire valoir vos droits.</p>
+
+                    <h3>1. Les Grandes Lignes de la Réforme 2026</h3>
+
+                    <p><strong>A. Report de l'Âge Légal</strong></p>
+                    <ul>
+                        <li>Ancien système : 62 ans</li>
+                        <li>Nouveau système : <strong>64 ans</strong> (applicable progressivement)</li>
+                        <li>Montée en charge : +3 mois par an dès 2026</li>
+                    </ul>
+
+                    <p><strong>B. Allongement de la Durée de Cotisation</strong></p>
+                    <ul>
+                        <li>Pour une retraite à taux plein : <strong>43 annuités</strong> (172 trimestres)</li>
+                        <li>Ancien système : 42 ans (168 trimestres)</li>
+                    </ul>
+
+                    <p><strong>C. Suppression de Certains Régimes Spéciaux</strong></p>
+                    <ul>
+                        <li>Harmonisation progressive vers le régime général</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>2. Impact pour les Travailleurs Africains</h3>
+
+                    <p><strong>A. Situation Fréquente</strong></p>
+                    <p>Beaucoup d'Africains ont travaillé quelques années en France avant de rentrer au pays :</p>
+                    <ul>
+                        <li>Études + premier emploi : 5 à 10 ans</li>
+                        <li>Séjour professionnel temporaire : 3 à 15 ans</li>
+                        <li>Détachement d'entreprise : 2 à 5 ans</li>
+                    </ul>
+
+                    <p><strong>B. Conséquences de la Réforme</strong></p>
+                    <ul>
+                        <li><strong>Départ différé</strong> : attendre 64 ans au lieu de 62 ans</li>
+                        <li><strong>Montant réduit</strong> : si moins de 43 ans de cotisation totale</li>
+                        <li><strong>Nécessité de compléter</strong> : avec cotisations dans le pays d'origine</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>3. Conventions Bilatérales de Sécurité Sociale</h3>
+
+                    <p><strong>France-Bénin : Convention du 28 juin 1977</strong></p>
+                    <p>Cette convention permet de <strong>totaliser les périodes de cotisation</strong> entre la France et le Bénin.</p>
+
+                    <p><strong>Principe de Totalisation :</strong></p>
+                    <ul>
+                        <li>15 ans en France + 20 ans au Bénin = <strong>35 ans</strong> pris en compte</li>
+                        <li>Chaque pays verse sa quote-part au prorata des années cotisées</li>
+                    </ul>
+
+                    <p><strong>Exemple Concret :</strong></p>
+                    <ul>
+                        <li>Monsieur Koffi : 10 ans en France, 30 ans au Bénin = 40 ans total</li>
+                        <li>France paie : 10/40 x montant calculé sur 40 ans</li>
+                        <li>Bénin paie : 30/40 x montant calculé sur 40 ans</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>4. Calcul de la Retraite Française</h3>
+
+                    <p><strong>Formule :</strong></p>
+                    <p>Retraite = Salaire annuel moyen × Taux × (Trimestres cotisés / Trimestres requis)</p>
+
+                    <p><strong>A. Salaire Annuel Moyen</strong></p>
+                    <ul>
+                        <li>Moyenne des <strong>25 meilleures années</strong></li>
+                        <li>Si moins de 25 ans cotisés : moyenne de toutes les années</li>
+                    </ul>
+
+                    <p><strong>B. Taux</strong></p>
+                    <ul>
+                        <li><strong>Taux plein (50%)</strong> : si 43 ans de cotisation ou 64 ans + durée minimale</li>
+                        <li><strong>Taux réduit</strong> : décote de 1,25% par trimestre manquant (max 25%)</li>
+                    </ul>
+
+                    <p><strong>C. Durée d'Assurance</strong></p>
+                    <ul>
+                        <li>Nombre de trimestres validés en France</li>
+                        <li>Maximum : 172 trimestres (43 ans)</li>
+                    </ul>
+
+                    <p><strong>Exemple :</strong></p>
+                    <ul>
+                        <li>Salaire moyen : 2 500 €/mois</li>
+                        <li>10 ans cotisés en France = 40 trimestres</li>
+                        <li>Taux plein grâce à totalisation avec le Bénin (40 ans au total)</li>
+                        <li>Retraite française = 2 500 × 50% × (40/172) = <strong>290 €/mois</strong></li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>5. Demander sa Retraite Française depuis le Bénin</h3>
+
+                    <p><strong>Étape 1 : Réunir les Documents</strong></p>
+                    <ul>
+                        <li>Relevé de carrière français (demande sur www.lassuranceretraite.fr)</li>
+                        <li>Justificatifs d'identité</li>
+                        <li>RIB d'un compte bancaire pour versement</li>
+                        <li>Certificat de résidence</li>
+                        <li>Relevé de carrière béninois (Caisse Nationale de Sécurité Sociale)</li>
+                    </ul>
+
+                    <p><strong>Étape 2 : Dépôt de la Demande</strong></p>
+                    <ul>
+                        <li><strong>En ligne</strong> : www.lassuranceretraite.fr (nécessite France Connect)</li>
+                        <li><strong>Par courrier</strong> : CNAV (Caisse Nationale d'Assurance Vieillesse), 110 avenue de Flandre, 75951 Paris Cedex 19</li>
+                        <li><strong>Via Ambassade/Consulat</strong> : aide aux démarches</li>
+                    </ul>
+
+                    <p><strong>Étape 3 : Délai de Traitement</strong></p>
+                    <ul>
+                        <li>Accusé de réception : 2 semaines</li>
+                        <li>Instruction du dossier : 3 à 6 mois</li>
+                        <li>Notification de la pension : par courrier</li>
+                        <li><strong>Déposer la demande 6 mois avant l'âge légal</strong></li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>6. Retraite Complémentaire (AGIRC-ARRCO)</h3>
+
+                    <p>En plus de la retraite de base, vous avez droit à une <strong>retraite complémentaire</strong> :</p>
+                    <ul>
+                        <li>Système par points</li>
+                        <li>Valeur du point 2026 : environ 1,40 €</li>
+                        <li>Calcul : nombre de points × valeur du point</li>
+                    </ul>
+
+                    <p><strong>Exemple :</strong></p>
+                    <ul>
+                        <li>10 ans de travail = environ 3 000 points</li>
+                        <li>Retraite complémentaire = 3 000 × 1,40 € = <strong>4 200 €/an</strong> soit 350 €/mois</li>
+                    </ul>
+
+                    <p><strong>Total Retraite (base + complémentaire) : 290 + 350 = 640 €/mois</strong></p>
+                    <div class="article-divider"></div>
+
+                    <h3>7. Versement de la Pension</h3>
+
+                    <p><strong>Modalités :</strong></p>
+                    <ul>
+                        <li>Versement mensuel</li>
+                        <li>Le 9 de chaque mois</li>
+                        <li>Virement bancaire (IBAN international accepté)</li>
+                        <li>Pas de frais de transfert (SEPA gratuit vers CEDEAO)</li>
+                    </ul>
+
+                    <p><strong>Certificat de Vie :</strong></p>
+                    <ul>
+                        <li>À fournir <strong>chaque année</strong></li>
+                        <li>Prouve que vous êtes toujours en vie</li>
+                        <li>Disponible en mairie au Bénin ou ambassade de France</li>
+                        <li><strong>Attention</strong> : oubli = suspension du versement</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>8. Fiscalité de la Retraite</h3>
+
+                    <p><strong>Imposition en France :</strong></p>
+                    <ul>
+                        <li>Prélèvement à la source de 0% à 20% selon montant</li>
+                        <li>Abattement de 10%</li>
+                        <li>CSG/CRDS : 9,1% (sauf si résident hors UE)</li>
+                    </ul>
+
+                    <p><strong>Convention Fiscale France-Bénin :</strong></p>
+                    <ul>
+                        <li>Retraites imposables dans le pays de résidence (Bénin)</li>
+                        <li>Mais retenue à la source en France possible</li>
+                        <li>Crédit d'impôt au Bénin pour éviter double imposition</li>
+                    </ul>
+
+                    <p><strong>Conseil</strong> : demander exonération de CSG si résidence hors France</p>
+                    <div class="article-divider"></div>
+
+                    <h3>9. Rachats de Trimestres</h3>
+
+                    <p>Si vous êtes proche de la retraite mais il vous manque quelques trimestres :</p>
+                    <ul>
+                        <li><strong>Rachat possible</strong> : années d'études, années incomplètes, périodes à l'étranger</li>
+                        <li><strong>Coût</strong> : environ 3 000 à 6 000 € par trimestre (selon âge et revenus)</li>
+                        <li><strong>Limite</strong> : 12 trimestres maximum</li>
+                    </ul>
+
+                    <p><strong>Rentabilité :</strong></p>
+                    <p>Calculer si le rachat est rentable selon votre espérance de vie et le montant de pension gagné.</p>
+                    <div class="article-divider"></div>
+
+                    <h3>10. Retraite Anticipée</h3>
+
+                    <p><strong>Carrières Longues :</strong></p>
+                    <ul>
+                        <li>Si début de carrière avant 20 ans</li>
+                        <li>Et 43 ans de cotisation</li>
+                        <li>Départ possible dès 60 ans (voire 58 ans dans certains cas)</li>
+                    </ul>
+
+                    <p><strong>Handicap / Pénibilité :</strong></p>
+                    <ul>
+                        <li>Reconnaissance de travail pénible ou handicap</li>
+                        <li>Départ anticipé possible</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>11. Conseils Pratiques</h3>
+                    <ul>
+                        <li><strong>Conservez tous vos bulletins de salaire</strong> : même anciens</li>
+                        <li><strong>Demandez votre relevé de carrière</strong> : dès 55 ans pour vérifier</li>
+                        <li><strong>Signalez les erreurs</strong> : périodes manquantes, salaires incorrects</li>
+                        <li><strong>Anticipez 2 ans avant</strong> : réunir documents, corriger erreurs</li>
+                        <li><strong>Consultez un expert</strong> : calculs complexes, optimisation possible</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>Conclusion</h3>
+                    <p>La réforme des retraites durcit les conditions, mais les conventions bilatérales permettent aux travailleurs africains de faire valoir leurs droits. Ne laissez pas dormir vos cotisations françaises !</p>
+                    <p><strong>MJ CONSEILS</strong> vous accompagne dans toutes vos démarches retraite France-Bénin : vérification de carrière, calcul des droits, constitution des dossiers, recours en cas de refus.</p>
+                    <p><strong>Vous avez travaillé en France ? Vérifiez vos droits à la retraite. Contactez-nous pour un audit gratuit.</strong></p>
+                `
+            },
+            'immigration-france': {
+                date: '17 Février 2026',
+                title: 'Immigration en France : Titres de Séjour et Droits des Béninois',
+                content: `
+                    <p>Obtenir un titre de séjour en France est un parcours semé d'embûches. Voici un guide complet pour comprendre vos droits, les procédures et les recours possibles.</p>
+
+                    <h3>1. Les Différents Titres de Séjour</h3>
+
+                    <p><strong>A. Visa Long Séjour (VLS)</strong></p>
+                    <ul>
+                        <li>Durée : 3 à 12 mois</li>
+                        <li>Délivré par consulat avant départ</li>
+                        <li>Types : études, travail, visiteur, conjoint de Français</li>
+                    </ul>
+
+                    <p><strong>B. Carte de Séjour Temporaire</strong></p>
+                    <ul>
+                        <li>Durée : 1 an (renouvelable)</li>
+                        <li>Motifs : étudiant, salarié, vie privée et familiale, visiteur</li>
+                    </ul>
+
+                    <p><strong>C. Carte de Séjour Pluriannuelle</strong></p>
+                    <ul>
+                        <li>Durée : 2 à 4 ans</li>
+                        <li>Après 1ère année régulière en France</li>
+                        <li>Profils : salarié qualifié, talent, famille</li>
+                    </ul>
+
+                    <p><strong>D. Carte de Résident</strong></p>
+                    <ul>
+                        <li>Durée : 10 ans (renouvelable)</li>
+                        <li>Après 5 ans de séjour régulier</li>
+                        <li>Permet de travailler librement</li>
+                    </ul>
+
+                    <p><strong>E. Carte de Résident Permanent</strong></p>
+                    <ul>
+                        <li>Valable à vie (renouvellement tous les 10 ans pour carte physique)</li>
+                        <li>Après 5 ans avec carte de résident</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>2. Titres de Séjour par Motif</h3>
+
+                    <p><strong>A. Études</strong></p>
+                    <ul>
+                        <li><strong>Conditions</strong> : inscription dans établissement agréé, ressources suffisantes (615 €/mois minimum)</li>
+                        <li><strong>Travail autorisé</strong> : 964 heures/an (60% temps plein)</li>
+                        <li><strong>Après diplôme</strong> : APS (Autorisation Provisoire de Séjour) de 12 mois pour chercher emploi</li>
+                    </ul>
+
+                    <p><strong>B. Travail Salarié</strong></p>
+                    <ul>
+                        <li><strong>Conditions</strong> : promesse d'embauche, employeur doit prouver qu'il n'a pas trouvé en France</li>
+                        <li><strong>Salaire</strong> : au moins 1,5 fois le SMIC pour certaines catégories</li>
+                        <li><strong>Secteurs en tension</strong> : IT, santé, BTP (procédure facilitée)</li>
+                    </ul>
+
+                    <p><strong>C. Passeport Talent</strong></p>
+                    <ul>
+                        <li>Pour profils hautement qualifiés</li>
+                        <li>Salaire minimum : 3 fois le SMIC (environ 5 500 €/mois)</li>
+                        <li>Carte pluriannuelle directe (4 ans)</li>
+                        <li>Avantages : conjoint autorisé à travailler, moins de contraintes</li>
+                    </ul>
+
+                    <p><strong>D. Vie Privée et Familiale</strong></p>
+                    <ul>
+                        <li><strong>Conjoint de Français</strong> : après 1 an de vie commune, carte de résident après 3 ans</li>
+                        <li><strong>Parent d'enfant français</strong> : automatique si l'enfant vit en France</li>
+                        <li><strong>Regroupement familial</strong> : conditions strictes (ressources, logement, 18 mois de séjour régulier)</li>
+                    </ul>
+
+                    <p><strong>E. Visiteur</strong></p>
+                    <ul>
+                        <li>Sans activité professionnelle</li>
+                        <li>Ressources propres suffisantes (SMIC minimum)</li>
+                        <li>Assurance maladie obligatoire</li>
+                    </ul>
+
+                    <p><strong>F. Commerçant / Profession Libérale</strong></p>
+                    <ul>
+                        <li>Créer entreprise en France</li>
+                        <li>Business plan solide</li>
+                        <li>Apport financier significatif</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>3. Procédure de Demande</h3>
+
+                    <p><strong>Première Demande :</strong></p>
+                    <ul>
+                        <li><strong>Depuis le Bénin</strong> : demande de visa long séjour au consulat de France à Cotonou</li>
+                        <li><strong>Documents</strong> : passeport, justificatifs selon motif, ressources, logement</li>
+                        <li><strong>Délai</strong> : 2 à 6 mois</li>
+                        <li><strong>Coût</strong> : 99 € (visa) + frais OFII (50-200 €)</li>
+                    </ul>
+
+                    <p><strong>Renouvellement :</strong></p>
+                    <ul>
+                        <li><strong>Déposer 2 à 4 mois avant expiration</strong> (sinon risque de pénalité)</li>
+                        <li><strong>Depuis 2023</strong> : tout en ligne via plateforme ANEF (Administration Numérique pour les Étrangers en France)</li>
+                        <li><strong>Récépissé</strong> : délivré en attendant, autorise séjour et parfois travail</li>
+                        <li><strong>Délai</strong> : 2 à 6 mois (parfois 12 mois dans certaines préfectures saturées)</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>4. Refus de Titre de Séjour : Que Faire ?</h3>
+
+                    <p><strong>A. Types de Refus</strong></p>
+                    <ul>
+                        <li><strong>Refus simple</strong> : sans obligation de quitter le territoire</li>
+                        <li><strong>OQTF</strong> (Obligation de Quitter le Territoire Français) : vous devez partir sous 30 jours</li>
+                    </ul>
+
+                    <p><strong>B. Recours Administratif</strong></p>
+                    <ul>
+                        <li><strong>Recours gracieux</strong> : demander réexamen au préfet (2 mois)</li>
+                        <li><strong>Recours hiérarchique</strong> : saisir le ministre de l'Intérieur (2 mois)</li>
+                    </ul>
+
+                    <p><strong>C. Recours Contentieux</strong></p>
+                    <ul>
+                        <li><strong>Tribunal Administratif</strong> : contester la décision (2 mois)</li>
+                        <li><strong>Référé suspension</strong> : demander suspension urgente de l'OQTF (48h-15 jours)</li>
+                        <li><strong>Délai de jugement</strong> : 6 à 18 mois</li>
+                        <li><strong>Taux de réussite</strong> : 20-30% selon les cas</li>
+                    </ul>
+
+                    <p><strong>Important</strong> : Le recours contentieux est <strong>suspensif</strong> pour le refus de titre, mais <strong>non suspensif</strong> pour l'OQTF (sauf référé accepté).</p>
+                    <div class="article-divider"></div>
+
+                    <h3>5. Régularisation par le Travail</h3>
+
+                    <p><strong>Circulaire Valls (2012) :</strong></p>
+                    <p>Possibilité de régularisation pour travailleurs sans papiers si :</p>
+                    <ul>
+                        <li>Présence en France depuis au moins 5 ans (3 ans si famille)</li>
+                        <li>Travail prouvé (bulletins de salaire, témoignages)</li>
+                        <li>Promesse d'embauche ou contrat de travail</li>
+                        <li>Métier en tension (liste fixée par région)</li>
+                        <li>Intégration (langue française, attaches familiales)</li>
+                    </ul>
+
+                    <p><strong>Procédure :</strong></p>
+                    <ul>
+                        <li>Dépôt du dossier en préfecture</li>
+                        <li>Examen au cas par cas (pouvoir discrétionnaire du préfet)</li>
+                        <li>Délai : 4 à 12 mois</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>6. Naturalisation Française</h3>
+
+                    <p><strong>Conditions :</strong></p>
+                    <ul>
+                        <li><strong>5 ans de résidence régulière</strong> (2 ans si diplôme français ou services exceptionnels)</li>
+                        <li><strong>Intégration</strong> : maîtrise du français (niveau B1 oral), connaissance culture française</li>
+                        <li><strong>Ressources stables</strong></li>
+                        <li><strong>Absence de condamnation pénale</strong></li>
+                    </ul>
+
+                    <p><strong>Procédure :</strong></p>
+                    <ul>
+                        <li>Dépôt plateforme en ligne</li>
+                        <li>Entretien individuel</li>
+                        <li>Enquête de moralité (police)</li>
+                        <li><strong>Délai</strong> : 12 à 24 mois</li>
+                    </ul>
+
+                    <p><strong>Coût :</strong> 55 € (timbre fiscal)</p>
+
+                    <p><strong>Double Nationalité :</strong></p>
+                    <p>Autorisée entre France et Bénin → vous gardez vos deux nationalités</p>
+                    <div class="article-divider"></div>
+
+                    <h3>7. Droits des Titulaires de Titre de Séjour</h3>
+
+                    <p><strong>A. Droit au Travail</strong></p>
+                    <ul>
+                        <li>Selon mention sur le titre : "autorise son titulaire à travailler" ou "salarié"</li>
+                        <li>Carte de résident : travail libre</li>
+                    </ul>
+
+                    <p><strong>B. Protection Sociale</strong></p>
+                    <ul>
+                        <li>Affiliation Sécurité Sociale (santé, retraite, chômage)</li>
+                        <li>Allocations familiales si enfants</li>
+                        <li>CMU-C (complémentaire santé) si faibles revenus</li>
+                    </ul>
+
+                    <p><strong>C. Liberté de Circulation</strong></p>
+                    <ul>
+                        <li>Espace Schengen accessible (selon type de titre)</li>
+                        <li>Retour au Bénin autorisé (mais attention durée absence)</li>
+                    </ul>
+
+                    <p><strong>D. Accès au Logement</strong></p>
+                    <ul>
+                        <li>APL (Aide Personnalisée au Logement)</li>
+                        <li>Logement social (sous conditions)</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>8. Pièges à Éviter</h3>
+                    <ul>
+                        <li><strong>Dossier incomplet</strong> : première cause de refus → tout vérifier</li>
+                        <li><strong>Déclarations incohérentes</strong> : entretien vs documents</li>
+                        <li><strong>Faux documents</strong> : bannissement définitif + poursuites pénales</li>
+                        <li><strong>Absence trop longue</strong> : > 6 mois hors France = risque de perte du titre</li>
+                        <li><strong>Changement de situation non déclaré</strong> : divorce, perte d'emploi → informer préfecture</li>
+                        <li><strong>Délais de renouvellement</strong> : anticiper, ne pas attendre dernière minute</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>9. Loi Immigration 2024 : Nouveautés</h3>
+                    <ul>
+                        <li><strong>Métiers en tension</strong> : carte pluriannuelle "travailleur temporaire" sans test du marché du travail</li>
+                        <li><strong>Durcissement regroupement familial</strong> : délai porté à 2 ans, ressources augmentées</li>
+                        <li><strong>Étudiants</strong> : restriction du droit au travail pour certaines filières non prioritaires</li>
+                        <li><strong>Facilitation naturalisation</strong> : pour militaires et personnes âgées arrivées jeunes</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>10. Conseils Pratiques</h3>
+                    <ul>
+                        <li><strong>Faites-vous accompagner</strong> : avocat spécialisé en droit des étrangers</li>
+                        <li><strong>Gardez copies de tout</strong> : récépissés, courriers, justificatifs</li>
+                        <li><strong>Respectez scrupuleusement la loi</strong> : aucune infraction</li>
+                        <li><strong>Apprenez le français</strong> : indispensable pour intégration et naturalisation</li>
+                        <li><strong>Tissez des liens</strong> : associations, bénévolat = preuves d'intégration</li>
+                        <li><strong>Soyez patient mais vigilant</strong> : ne laissez pas passer les délais de recours</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>Conclusion</h3>
+                    <p>L'immigration en France est devenue plus complexe, mais reste possible avec une bonne préparation et un accompagnement adapté. Chaque situation est unique et mérite une analyse personnalisée.</p>
+                    <p><strong>MJ CONSEILS</strong>, grâce à son réseau franco-béninois, vous accompagne dans toutes vos démarches d'immigration : constitution de dossiers, recours contre refus, régularisation, naturalisation.</p>
+                    <p><strong>Projet d'immigration en France ou titre de séjour refusé ? Contactez-nous pour une consultation personnalisée.</strong></p>
+                `
+            },
+            'droit-image': {
+                date: '15 Février 2026',
+                title: 'Droit à l\'Image au Bénin : Protéger votre Image et vos Droits',
+                content: `
+                    <p>À l'ère du numérique où chacun peut photographier et diffuser instantanément, le droit à l'image devient un enjeu majeur. Que dit la loi béninoise ? Comment protéger votre image et celle de vos proches ?</p>
+
+                    <h3>1. Qu'est-ce que le Droit à l'Image ?</h3>
+                    <p>Le droit à l'image est le droit de toute personne physique de s'opposer à la reproduction, diffusion ou utilisation commerciale de son image sans son consentement préalable. C'est un droit fondamental protégé par :</p>
+                    <ul>
+                        <li>Le droit au respect de la vie privée (Constitution béninoise)</li>
+                        <li>Le Code du Numérique (loi n°2017-20)</li>
+                        <li>Le Code Pénal (atteinte à la vie privée)</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>2. Principes Fondamentaux</h3>
+                    
+                    <p><strong>A. Le Consentement Préalable</strong></p>
+                    <p>Toute personne doit donner son autorisation <strong>avant</strong> que son image soit :</p>
+                    <ul>
+                        <li>Photographiée ou filmée</li>
+                        <li>Diffusée (réseaux sociaux, presse, affichage public)</li>
+                        <li>Utilisée à des fins commerciales (publicité, marketing)</li>
+                    </ul>
+                    <p><em>Exception</em> : personnes publiques dans l'exercice de leurs fonctions, événements d'actualité où la personne n'est pas le sujet principal.</p>
+
+                    <p><strong>B. L'Autorisation doit être :</strong></p>
+                    <ul>
+                        <li><strong>Expresse</strong> : claire et non ambiguë (de préférence écrite)</li>
+                        <li><strong>Spécifique</strong> : préciser l'usage, la durée, le territoire</li>
+                        <li><strong>Révocable</strong> : la personne peut retirer son consentement</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>3. Cas Particuliers</h3>
+
+                    <p><strong>A. Les Mineurs</strong></p>
+                    <ul>
+                        <li>L'autorisation doit être donnée par les <strong>deux parents</strong> (ou tuteur légal)</li>
+                        <li>Protection renforcée : interdiction absolue d'utilisation commerciale préjudiciable</li>
+                        <li>Le mineur devenu majeur peut s'opposer à l'usage d'images prises pendant sa minorité</li>
+                        <li><strong>Attention</strong> : partager la photo d'un enfant qui n'est pas le vôtre (même sur WhatsApp) nécessite l'accord des parents</li>
+                    </ul>
+
+                    <p><strong>B. Les Personnes Décédées</strong></p>
+                    <ul>
+                        <li>Le droit à l'image persiste après le décès</li>
+                        <li>Les héritiers peuvent s'opposer à l'utilisation de l'image du défunt</li>
+                        <li>Protection de la mémoire et de la dignité du défunt</li>
+                    </ul>
+
+                    <p><strong>C. Les Groupes et Foules</strong></p>
+                    <ul>
+                        <li>Photographier une foule lors d'un événement public : généralement autorisé</li>
+                        <li><strong>Mais</strong> : si une personne est individualisée (gros plan, légende nominative), son consentement est nécessaire</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>4. Droit à l'Image sur les Réseaux Sociaux</h3>
+                    
+                    <p><strong>Publications sur Facebook, Instagram, TikTok, WhatsApp...</strong></p>
+                    <p>Les règles s'appliquent également aux réseaux sociaux :</p>
+                    <ul>
+                        <li>Publier la photo de quelqu'un sans son accord = violation du droit à l'image</li>
+                        <li>Même si c'est un ami ou un proche</li>
+                        <li>Même dans un groupe privé</li>
+                        <li>La personne peut exiger le retrait de la photo</li>
+                    </ul>
+
+                    <p><strong>Cas Fréquents de Violation :</strong></p>
+                    <ul>
+                        <li>Photos de mariage/baptême publiées sans accord de tous les participants identifiables</li>
+                        <li>Photos d'enfants publiées par des tiers (enseignants, famille élargie)</li>
+                        <li>Photos prises lors de soirées privées</li>
+                        <li>Captures d'écran de conversations privées avec photos</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>5. Usage Commercial de l'Image</h3>
+                    
+                    <p>L'utilisation commerciale nécessite un <strong>contrat écrit</strong> précisant :</p>
+                    <ul>
+                        <li>La rémunération (ou gratuité si accord)</li>
+                        <li>La durée d'utilisation</li>
+                        <li>Le territoire géographique</li>
+                        <li>Les supports de diffusion (affichage, web, TV, etc.)</li>
+                        <li>La finalité (publicité pour quel produit/service)</li>
+                    </ul>
+
+                    <p><strong>Exemples d'usage commercial :</strong></p>
+                    <ul>
+                        <li>Photo sur une publicité</li>
+                        <li>Image sur un packaging de produit</li>
+                        <li>Vidéo promotionnelle d'une entreprise</li>
+                        <li>Photo d'employés sur le site web de l'entreprise</li>
+                        <li>Image utilisée par un influenceur pour promouvoir un produit</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>6. Atteintes au Droit à l'Image</h3>
+                    
+                    <p><strong>Violations Courantes :</strong></p>
+                    <ul>
+                        <li>Publication sans consentement</li>
+                        <li>Usage détourné (contexte différent de celui autorisé)</li>
+                        <li>Modification de l'image (photomontage, détourage) portant atteinte à la dignité</li>
+                        <li>Maintien en ligne après retrait du consentement</li>
+                        <li>Diffusion hors du cadre autorisé (durée, territoire, support dépassés)</li>
+                    </ul>
+
+                    <p><strong>Cas Aggravants :</strong></p>
+                    <ul>
+                        <li>Image diffamatoire ou dégradante</li>
+                        <li>Montage trompeur ("fake news" avec photo)</li>
+                        <li>Usage dans un contexte sexuel ou violent</li>
+                        <li>Vengeance pornographique ("revenge porn")</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>7. Recours en cas de Violation</h3>
+
+                    <p><strong>Étape 1 : Demande Amiable de Retrait</strong></p>
+                    <ul>
+                        <li>Contacter directement la personne/entité ayant diffusé l'image</li>
+                        <li>Demande écrite (email, lettre recommandée)</li>
+                        <li>Exiger le retrait immédiat</li>
+                        <li>Conserver les preuves (captures d'écran)</li>
+                    </ul>
+
+                    <p><strong>Étape 2 : Signalement à la Plateforme</strong></p>
+                    <p>Pour les réseaux sociaux :</p>
+                    <ul>
+                        <li>Utiliser les outils de signalement intégrés</li>
+                        <li>Facebook, Instagram, TikTok ont des procédures de retrait</li>
+                        <li>La plateforme peut supprimer le contenu rapidement</li>
+                    </ul>
+
+                    <p><strong>Étape 3 : Action en Justice</strong></p>
+                    <p>Si la demande amiable échoue :</p>
+                    <ul>
+                        <li><strong>Référé</strong> : procédure d'urgence pour retrait immédiat</li>
+                        <li><strong>Action au fond</strong> : demande de dommages et intérêts</li>
+                        <li><strong>Plainte pénale</strong> : atteinte à la vie privée (emprisonnement + amende)</li>
+                    </ul>
+
+                    <p><strong>Sanctions Possibles :</strong></p>
+                    <ul>
+                        <li>Retrait de l'image sous astreinte (pénalité par jour de retard)</li>
+                        <li>Dommages et intérêts : 500 000 à 5 000 000 FCFA selon le préjudice</li>
+                        <li>Sanctions pénales : jusqu'à 3 ans d'emprisonnement et 10 millions FCFA d'amende</li>
+                        <li>Publication du jugement aux frais du condamné</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>8. Droit à l'Image au Travail</h3>
+                    
+                    <p>L'employeur ne peut pas utiliser librement l'image de ses employés :</p>
+                    <ul>
+                        <li>Autorisation écrite nécessaire pour photos professionnelles (site web, brochures)</li>
+                        <li>Vidéosurveillance strictement encadrée</li>
+                        <li>Photos d'événements d'entreprise : consentement requis pour publication</li>
+                        <li>Badge professionnel avec photo : dans les limites de l'usage interne</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>9. Conseils Pratiques</h3>
+
+                    <p><strong>Pour Protéger votre Image :</strong></p>
+                    <ul>
+                        <li>Vérifiez les paramètres de confidentialité de vos réseaux sociaux</li>
+                        <li>N'acceptez pas systématiquement d'être photographié</li>
+                        <li>Demandez le retrait immédiat si une photo vous déplaît</li>
+                        <li>Éduquez vos proches sur le respect du droit à l'image</li>
+                        <li>Surveillez régulièrement votre e-réputation (Google Images)</li>
+                    </ul>
+
+                    <p><strong>Si vous Publiez des Photos :</strong></p>
+                    <ul>
+                        <li>Demandez toujours l'autorisation des personnes identifiables</li>
+                        <li>Pour les enfants : accord des DEUX parents obligatoire</li>
+                        <li>Flouter les visages si nécessaire</li>
+                        <li>Retirez immédiatement si quelqu'un le demande</li>
+                        <li>Évitez les contextes qui pourraient porter préjudice</li>
+                    </ul>
+
+                    <p><strong>Rédiger une Autorisation :</strong></p>
+                    <p>Un modèle simple doit contenir :</p>
+                    <ul>
+                        <li>Identité de la personne photographiée</li>
+                        <li>Contexte de la prise de vue</li>
+                        <li>Usage prévu (privé, commercial, médias)</li>
+                        <li>Durée de l'autorisation</li>
+                        <li>Signature et date</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>10. Droit à l'Oubli Numérique</h3>
+                    <p>Vous pouvez demander :</p>
+                    <ul>
+                        <li>Le déréférencement de votre image sur les moteurs de recherche</li>
+                        <li>La suppression de contenus obsolètes ou préjudiciables</li>
+                        <li>La mise à jour d'informations erronées vous concernant</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>Conclusion</h3>
+                    <p>Le droit à l'image n'est pas un luxe mais un droit fondamental. Dans un monde hyperconnecté, sa violation peut causer des préjudices considérables : atteinte à la réputation, cyberharcèlement, discrimination. Ne laissez personne utiliser votre image sans votre accord.</p>
+                    <p><strong>MJ CONSEILS</strong> vous accompagne pour faire respecter votre droit à l'image : mise en demeure, négociation, action en justice, et obtention de dommages et intérêts.</p>
+                    <p><strong>Votre image a été utilisée sans votre consentement ? Contactez-nous immédiatement.</strong></p>
+                `
+            },
+            'reseaux-sociaux': {
+                date: '14 Février 2026',
+                title: 'Droit du Numérique : Réseaux Sociaux et Responsabilité Juridique',
+                content: `
+                    <p>Facebook, WhatsApp, TikTok, Instagram, X (Twitter)... Les réseaux sociaux font partie de notre quotidien. Mais attention : ce n'est pas une zone de non-droit ! Au Bénin comme ailleurs, vos publications peuvent avoir des conséquences juridiques graves.</p>
+
+                    <h3>1. Cadre Juridique des Réseaux Sociaux au Bénin</h3>
+                    <p>Plusieurs textes régissent l'usage des réseaux sociaux :</p>
+                    <ul>
+                        <li><strong>Code du Numérique</strong> (loi n°2017-20) : protection des données, cybercriminalité</li>
+                        <li><strong>Code Pénal</strong> : diffamation, injure, atteinte à la vie privée</li>
+                        <li><strong>Loi sur la Cybercriminalité</strong> : harcèlement en ligne, usurpation d'identité</li>
+                        <li><strong>Code de la Presse</strong> : liberté d'expression et ses limites</li>
+                    </ul>
+                    <p><strong>Principe fondamental</strong> : Vous êtes responsable de tout ce que vous publiez, partagez, commentez ou "likez" sur les réseaux sociaux.</p>
+                    <div class="article-divider"></div>
+
+                    <h3>2. Diffamation et Injure en Ligne</h3>
+
+                    <p><strong>A. La Diffamation</strong></p>
+                    <p>Allégation d'un fait précis portant atteinte à l'honneur ou à la réputation d'une personne :</p>
+                    <ul>
+                        <li>"Untel a volé de l'argent dans l'entreprise"</li>
+                        <li>"Cette femme trompe son mari avec son patron"</li>
+                        <li>"Ce commerçant vend des produits périmés"</li>
+                    </ul>
+                    <p><em>Même si c'est vrai</em>, si vous ne pouvez pas le prouver, c'est de la diffamation !</p>
+
+                    <p><strong>B. L'Injure</strong></p>
+                    <p>Expression outrageante sans allégation de fait précis :</p>
+                    <ul>
+                        <li>"Vous êtes un incompétent"</li>
+                        <li>"C'est une menteuse"</li>
+                        <li>"Quel escroc !"</li>
+                    </ul>
+
+                    <p><strong>Sanctions :</strong></p>
+                    <ul>
+                        <li><strong>Diffamation publique</strong> : jusqu'à 1 an d'emprisonnement et 5 millions FCFA d'amende</li>
+                        <li><strong>Injure publique</strong> : jusqu'à 6 mois et 2 millions FCFA</li>
+                        <li><strong>Dommages et intérêts</strong> : de 500 000 à 10 millions FCFA selon le préjudice</li>
+                        <li>Publication du jugement aux frais du condamné</li>
+                    </ul>
+
+                    <p><strong>Attention aux Partages !</strong></p>
+                    <p>Partager ou "retweeter" un contenu diffamatoire vous rend également responsable, même si ce n'est pas vous qui l'avez écrit initialement.</p>
+                    <div class="article-divider"></div>
+
+                    <h3>3. Cyberharcèlement</h3>
+                    
+                    <p>Le harcèlement en ligne est sévèrement puni. Il se caractérise par :</p>
+                    <ul>
+                        <li>Messages répétés de menaces, insultes ou intimidations</li>
+                        <li>Publication répétée de contenus visant à humilier</li>
+                        <li>Création de faux comptes pour harceler</li>
+                        <li>Campagnes de dénigrement coordonnées ("cybermobbing")</li>
+                        <li>Divulgation d'informations privées ("doxxing")</li>
+                    </ul>
+
+                    <p><strong>Formes Courantes :</strong></p>
+                    <ul>
+                        <li>Harcèlement scolaire poursuivi en ligne</li>
+                        <li>Harcèlement au travail via messageries professionnelles</li>
+                        <li>Harcèlement dans les relations (ex-conjoints, prétendants éconduits)</li>
+                        <li>Lynchage médiatique suite à une polémique</li>
+                    </ul>
+
+                    <p><strong>Sanctions :</strong></p>
+                    <ul>
+                        <li>Jusqu'à <strong>3 ans de prison</strong> et <strong>10 millions FCFA</strong> d'amende</li>
+                        <li>Peines aggravées si la victime est mineure ou vulnérable</li>
+                        <li>Obligation d'indemnisation de la victime</li>
+                        <li>Interdiction d'utilisation de réseaux sociaux (peine complémentaire)</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>4. Fake News et Désinformation</h3>
+
+                    <p>La propagation de fausses informations est sanctionnée, surtout si elle vise à :</p>
+                    <ul>
+                        <li>Troubler l'ordre public</li>
+                        <li>Nuire à une personne ou institution</li>
+                        <li>Influencer des processus électoraux</li>
+                        <li>Semer la panique (fausses alertes sanitaires, attentats fictifs)</li>
+                    </ul>
+
+                    <p><strong>Exemples Concrets :</strong></p>
+                    <ul>
+                        <li>Fausse annonce du décès d'une personnalité</li>
+                        <li>Rumeurs sur des produits alimentaires "empoisonnés"</li>
+                        <li>Fausses informations électorales</li>
+                        <li>Manipulation de photos/vidéos ("deepfakes")</li>
+                    </ul>
+
+                    <p><strong>Sanctions :</strong></p>
+                    <ul>
+                        <li>Jusqu'à 2 ans de prison et 5 millions FCFA d'amende</li>
+                        <li>Obligation de publier un démenti aux frais du condamné</li>
+                        <li>Dommages et intérêts si préjudice prouvé</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>5. Usurpation d'Identité Numérique</h3>
+
+                    <p>Créer un faux profil en utilisant l'identité d'autrui est un délit :</p>
+                    <ul>
+                        <li>Faux compte au nom d'une personne réelle</li>
+                        <li>Utilisation de la photo de quelqu'un d'autre</li>
+                        <li>Piratage de compte pour publier en son nom</li>
+                        <li>Faux profil d'entreprise</li>
+                    </ul>
+
+                    <p><strong>Sanctions :</strong></p>
+                    <ul>
+                        <li>Jusqu'à <strong>5 ans de prison</strong> et <strong>15 millions FCFA</strong> d'amende</li>
+                        <li>Dommages et intérêts majorés si usage frauduleux (escroquerie, diffamation)</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>6. Protection de la Vie Privée</h3>
+
+                    <p>Il est interdit de :</p>
+                    <ul>
+                        <li>Publier des conversations privées sans accord (WhatsApp, SMS, emails)</li>
+                        <li>Divulguer des informations confidentielles sur autrui</li>
+                        <li>Partager des images intimes sans consentement ("revenge porn")</li>
+                        <li>Révéler l'adresse, le numéro de téléphone ou autres données personnelles d'autrui</li>
+                    </ul>
+
+                    <p><strong>Le "Revenge Porn" (Vengeance Pornographique) :</strong></p>
+                    <p>Diffusion d'images ou vidéos intimes d'une personne sans son consentement, souvent par vengeance après une rupture.</p>
+                    <ul>
+                        <li>Sanctions : jusqu'à <strong>5 ans de prison</strong> et <strong>20 millions FCFA</strong> d'amende</li>
+                        <li>Retrait immédiat du contenu</li>
+                        <li>Dommages et intérêts importants pour préjudice moral</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>7. E-réputation et Droit de Réponse</h3>
+
+                    <p><strong>Protéger sa Réputation en Ligne :</strong></p>
+                    <ul>
+                        <li>Surveillez régulièrement ce qui se dit sur vous (Google Alerts)</li>
+                        <li>Répondez calmement aux critiques injustifiées</li>
+                        <li>Demandez le retrait de contenus diffamatoires</li>
+                        <li>Exercez votre droit de réponse</li>
+                        <li>Actionnez en justice si nécessaire</li>
+                    </ul>
+
+                    <p><strong>Droit au Déréférencement :</strong></p>
+                    <p>Vous pouvez demander aux moteurs de recherche (Google, Bing) de supprimer des liens vers des contenus obsolètes, inexacts ou préjudiciables vous concernant.</p>
+                    <div class="article-divider"></div>
+
+                    <h3>8. Responsabilité des Influenceurs et Community Managers</h3>
+
+                    <p>Les influenceurs et gestionnaires de pages ont des responsabilités accrues :</p>
+                    <ul>
+                        <li><strong>Transparence</strong> : signaler les contenus sponsorisés (#pub, #partenariat)</li>
+                        <li><strong>Véracité</strong> : vérifier les informations avant de les partager</li>
+                        <li><strong>Modération</strong> : modérer les commentaires haineux ou diffamatoires</li>
+                        <li><strong>Protection des données</strong> : respecter la vie privée des abonnés</li>
+                    </ul>
+
+                    <p><strong>Sanctions spécifiques :</strong></p>
+                    <ul>
+                        <li>Publicité mensongère : amendes et interdiction d'exercer</li>
+                        <li>Non-signalement de contenus illicites : complicité</li>
+                        <li>Manipulation commerciale : sanctions de la concurrence</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>9. Que Faire en Cas de Problème ?</h3>
+
+                    <p><strong>Si vous êtes Victime :</strong></p>
+                    <ul>
+                        <li><strong>Conservez les preuves</strong> : captures d'écran avec date et heure visibles</li>
+                        <li><strong>Signalez à la plateforme</strong> : toutes ont des outils de signalement</li>
+                        <li><strong>Demandez le retrait</strong> : contactez l'auteur ou la plateforme</li>
+                        <li><strong>Bloquez l'auteur</strong> : pour arrêter le harcèlement</li>
+                        <li><strong>Déposez plainte</strong> : commissariat ou cyberpoliciers</li>
+                        <li><strong>Consultez un avocat</strong> : pour action civile (dommages et intérêts)</li>
+                    </ul>
+
+                    <p><strong>Si vous êtes Accusé :</strong></p>
+                    <ul>
+                        <li><strong>Ne supprimez rien</strong> : cela peut aggraver votre cas</li>
+                        <li><strong>Présentez vos excuses</strong> : si vous êtes en tort</li>
+                        <li><strong>Retirez le contenu litigieux</strong> : rapidement</li>
+                        <li><strong>Consultez un avocat</strong> : avant de répondre à une mise en demeure</li>
+                        <li><strong>Préparez votre défense</strong> : prouvez la vérité (diffamation) ou votre bonne foi</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>10. Bonnes Pratiques sur les Réseaux Sociaux</h3>
+
+                    <ul>
+                        <li><strong>Réfléchissez avant de publier</strong> : "Est-ce que je dirais ça en public ?"</li>
+                        <li><strong>Vérifiez vos sources</strong> : ne partagez pas d'infos non vérifiées</li>
+                        <li><strong>Respectez la vie privée d'autrui</strong> : ne publiez pas sans consentement</li>
+                        <li><strong>Restez courtois</strong> : désaccord ≠ insulte</li>
+                        <li><strong>Protégez vos données</strong> : paramètres de confidentialité, mots de passe forts</li>
+                        <li><strong>Éduquez vos enfants</strong> : accompagnez-les dans leur usage du numérique</li>
+                        <li><strong>Signalez les abus</strong> : ne restez pas spectateur du harcèlement</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>11. Réseaux Sociaux et Emploi</h3>
+
+                    <p><strong>Attention :</strong></p>
+                    <ul>
+                        <li>Vos publications peuvent être utilisées contre vous (recrutement, licenciement)</li>
+                        <li>Critiquer publiquement votre employeur = faute grave possible</li>
+                        <li>Vérifiez vos paramètres de confidentialité</li>
+                        <li>Séparez vie professionnelle et personnelle (comptes distincts)</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>Conclusion</h3>
+                    <p>Les réseaux sociaux sont des espaces de liberté, mais pas d'anarchie. Chaque publication peut avoir des conséquences juridiques, financières et personnelles. La prudence et le respect d'autrui doivent guider votre présence en ligne.</p>
+                    <p><strong>MJ CONSEILS</strong> vous accompagne dans tous les litiges liés aux réseaux sociaux : défense contre des accusations de diffamation, action contre du cyberharcèlement, protection de votre e-réputation, récupération de comptes piratés, et obtention de dommages et intérêts.</p>
+                    <p><strong>Victime de cyberharcèlement, diffamation en ligne ou atteinte à votre réputation ? Contactez-nous immédiatement.</strong></p>
+                `
+            },
+            'ia-optimisation': {
+                date: '12 Février 2026',
+                title: 'IA et Justice : Optimiser le Droit pour Avocats et Tribunaux',
+                content: `
+                    <p>L'intelligence artificielle n'est plus une technologie futuriste : elle transforme déjà profondément la pratique du droit et le fonctionnement des tribunaux. Loin de remplacer les juristes, l'IA devient un outil puissant d'optimisation et d'efficacité.</p>
+
+                    <h3>1. L'IA au Service des Avocats</h3>
+                    <p>Les cabinets juridiques adoptent progressivement des solutions d'IA pour :</p>
+                    <ul>
+                        <li><strong>Recherche juridique automatisée</strong> : analyse instantanée de milliers de jurisprudences et textes légaux</li>
+                        <li><strong>Rédaction assistée</strong> : génération de projets de contrats et actes à partir de modèles intelligents</li>
+                        <li><strong>Due diligence accélérée</strong> : examen automatique de centaines de documents en quelques heures</li>
+                        <li><strong>Analyse prédictive</strong> : évaluation des chances de succès d'un litige basée sur l'analyse de cas similaires</li>
+                        <li><strong>Gestion du temps</strong> : automatisation des tâches administratives (facturation, calendrier, suivi de dossiers)</li>
+                    </ul>
+                    <p><strong>Résultat</strong> : les avocats peuvent se concentrer sur la stratégie juridique, le conseil personnalisé et la plaidoirie, leur véritable valeur ajoutée.</p>
+                    <div class="article-divider"></div>
+
+                    <h3>2. L'IA dans les Tribunaux et la Justice</h3>
+                    <p>Les juridictions commencent à expérimenter l'IA pour améliorer l'efficacité judiciaire :</p>
+                    
+                    <p><strong>A. Aide à la Décision Judiciaire</strong></p>
+                    <ul>
+                        <li>Analyse automatique des jurisprudences pertinentes</li>
+                        <li>Détection de contradictions dans les témoignages</li>
+                        <li>Calcul automatisé de certaines indemnités (pensions alimentaires, préjudices corporels)</li>
+                        <li>Suggestion de peines cohérentes avec la jurisprudence</li>
+                    </ul>
+                    <p><em>Important</em> : L'IA assiste le juge mais ne le remplace jamais. La décision finale reste humaine.</p>
+
+                    <p><strong>B. Gestion des Flux Judiciaires</strong></p>
+                    <ul>
+                        <li>Tri et classification automatique des affaires</li>
+                        <li>Détection des affaires urgentes</li>
+                        <li>Optimisation des calendriers d'audience</li>
+                        <li>Réduction des délais de traitement</li>
+                    </ul>
+
+                    <p><strong>C. Accès à la Justice</strong></p>
+                    <ul>
+                        <li>Chatbots juridiques pour l'information des justiciables</li>
+                        <li>Orientation automatique vers les bonnes juridictions</li>
+                        <li>Assistance à la rédaction de requêtes simples</li>
+                        <li>Vulgarisation du langage juridique</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>3. Cas d'Usage Concrets en Afrique</h3>
+                    <p>Plusieurs initiatives émergent sur le continent :</p>
+                    <ul>
+                        <li><strong>Rwanda</strong> : système d'IA pour la gestion des affaires civiles</li>
+                        <li><strong>Afrique du Sud</strong> : analyse prédictive en matière pénale</li>
+                        <li><strong>Kenya</strong> : plateforme de médiation en ligne assistée par IA</li>
+                        <li><strong>Bénin</strong> : premières expérimentations de digitalisation des greffes avec outils d'IA</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>4. Avantages de la Conciliation Droit-IA</h3>
+                    
+                    <p><strong>Pour les Avocats :</strong></p>
+                    <ul>
+                        <li>Gain de temps considérable sur les tâches répétitives (50-70%)</li>
+                        <li>Réduction des erreurs humaines</li>
+                        <li>Capacité à traiter plus de dossiers</li>
+                        <li>Arguments juridiques plus solides grâce à l'analyse exhaustive</li>
+                        <li>Amélioration de la compétitivité du cabinet</li>
+                    </ul>
+
+                    <p><strong>Pour les Tribunaux :</strong></p>
+                    <ul>
+                        <li>Réduction drastique des délais judiciaires</li>
+                        <li>Harmonisation de la jurisprudence</li>
+                        <li>Diminution de l'arriéré judiciaire</li>
+                        <li>Meilleure prévision des flux</li>
+                        <li>Économies budgétaires significatives</li>
+                    </ul>
+
+                    <p><strong>Pour les Justiciables :</strong></p>
+                    <ul>
+                        <li>Accès facilité à l'information juridique</li>
+                        <li>Justice plus rapide et moins coûteuse</li>
+                        <li>Transparence accrue des décisions</li>
+                        <li>Meilleure prévisibilité des issues judiciaires</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>5. Les Défis à Relever</h3>
+                    <p>L'intégration de l'IA dans le droit soulève des questions :</p>
+                    <ul>
+                        <li><strong>Biais algorithmiques</strong> : risque de perpétuer des discriminations présentes dans les données historiques</li>
+                        <li><strong>Transparence</strong> : nécessité de comprendre comment l'IA arrive à ses conclusions ("boîte noire")</li>
+                        <li><strong>Responsabilité</strong> : qui est responsable en cas d'erreur de l'IA ?</li>
+                        <li><strong>Protection des données</strong> : sécurisation des informations sensibles</li>
+                        <li><strong>Fracture numérique</strong> : risque d'exclusion pour ceux sans accès à la technologie</li>
+                        <li><strong>Formation</strong> : nécessité de former les juristes aux outils d'IA</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>6. L'Avenir : Une Justice Augmentée</h3>
+                    <p>Le futur du droit n'est pas une IA qui remplace les humains, mais une collaboration homme-machine optimale :</p>
+                    <ul>
+                        <li>L'IA traite les données, les humains apportent le jugement</li>
+                        <li>L'IA suggère, les avocats et juges décident</li>
+                        <li>L'IA accélère, les humains garantissent l'équité</li>
+                        <li>L'IA uniformise, les humains adaptent au cas par cas</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>7. Recommandations pour les Professionnels du Droit</h3>
+                    <ul>
+                        <li>Se former aux outils d'IA juridique</li>
+                        <li>Commencer par des outils simples (recherche, rédaction)</li>
+                        <li>Maintenir un esprit critique face aux suggestions de l'IA</li>
+                        <li>Participer aux discussions sur l'encadrement éthique de l'IA</li>
+                        <li>Investir progressivement dans ces technologies</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>Conclusion</h3>
+                    <p>L'IA n'est pas une menace pour les juristes mais un formidable levier d'efficacité. Les cabinets et tribunaux qui sauront l'adopter intelligemment bénéficieront d'avantages compétitifs considérables. Chez <strong>MJ CONSEILS</strong>, nous suivons ces évolutions de près et intégrons progressivement ces outils pour offrir à nos clients un service toujours plus performant.</p>
+                    <p><strong>Besoin d'accompagnement sur les aspects juridiques de l'IA ou sur l'adoption de ces technologies dans votre pratique ? Contactez-nous.</strong></p>
+                `
+            },
+            'licenciement': {
+                date: '10 Février 2026',
+                title: 'Licenciement au Bénin : Droits des Travailleurs et Recours',
+                content: `
+                    <p>Le licenciement est une rupture du contrat de travail à l'initiative de l'employeur. Au Bénin, cette procédure est strictement encadrée pour protéger les droits des travailleurs. Connaître vos droits est essentiel.</p>
+
+                    <h3>1. Les Types de Licenciement</h3>
+                    
+                    <p><strong>A. Licenciement pour Motif Personnel</strong></p>
+                    <p>Il peut être :</p>
+                    <ul>
+                        <li><strong>Disciplinaire</strong> : faute simple, grave ou lourde du salarié (absence injustifiée, insubordination, vol, violence, etc.)</li>
+                        <li><strong>Non disciplinaire</strong> : insuffisance professionnelle, inaptitude physique constatée par le médecin du travail</li>
+                    </ul>
+
+                    <p><strong>B. Licenciement pour Motif Économique</strong></p>
+                    <p>Licenciement justifié par des difficultés économiques, des mutations technologiques ou une réorganisation nécessaire à la sauvegarde de l'entreprise.</p>
+                    <div class="article-divider"></div>
+
+                    <h3>2. La Procédure Légale de Licenciement</h3>
+                    <p>L'employeur DOIT respecter ces étapes sous peine de licenciement abusif :</p>
+
+                    <p><strong>Étape 1 : Convocation à un Entretien Préalable</strong></p>
+                    <ul>
+                        <li>Lettre remise en main propre ou recommandée</li>
+                        <li>Délai minimum de 48 heures entre convocation et entretien</li>
+                        <li>Droit d'être assisté par un représentant du personnel ou un défenseur syndical</li>
+                    </ul>
+
+                    <p><strong>Étape 2 : Entretien Préalable</strong></p>
+                    <ul>
+                        <li>L'employeur expose les motifs du licenciement envisagé</li>
+                        <li>Le salarié s'explique et présente sa défense</li>
+                        <li>Aucune décision ne peut être prise lors de cet entretien</li>
+                    </ul>
+
+                    <p><strong>Étape 3 : Notification du Licenciement</strong></p>
+                    <ul>
+                        <li>Lettre de licenciement motivée</li>
+                        <li>Délai de réflexion minimum de 2 jours après l'entretien</li>
+                        <li>La lettre doit préciser clairement les motifs (impossible de les modifier ensuite)</li>
+                        <li>Mention du préavis et des indemnités</li>
+                    </ul>
+
+                    <p><strong>Étape 4 : Préavis</strong></p>
+                    <p>Durée variable selon l'ancienneté et la catégorie professionnelle :</p>
+                    <ul>
+                        <li>Ouvriers et employés : 1 à 3 mois selon ancienneté</li>
+                        <li>Agents de maîtrise et cadres : 3 à 6 mois</li>
+                        <li>Dispense de préavis en cas de faute grave ou lourde</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>3. Indemnités Dues au Salarié Licencié</h3>
+
+                    <p><strong>A. Indemnité de Licenciement</strong></p>
+                    <p>Pour tout salarié ayant au moins 1 an d'ancienneté, sauf faute lourde :</p>
+                    <ul>
+                        <li>Montant variable selon l'ancienneté (généralement 1 mois par tranche de 5 ans)</li>
+                        <li>Calculée sur la base du salaire brut moyen des 12 derniers mois</li>
+                    </ul>
+
+                    <p><strong>B. Indemnité Compensatrice de Préavis</strong></p>
+                    <p>Si l'employeur dispense le salarié d'effectuer son préavis (sauf faute grave/lourde), il doit payer l'équivalent.</p>
+
+                    <p><strong>C. Indemnité Compensatrice de Congés Payés</strong></p>
+                    <p>Paiement de tous les congés acquis et non pris.</p>
+
+                    <p><strong>D. Rappel de Salaire</strong></p>
+                    <p>Si des salaires, primes ou heures supplémentaires sont dus.</p>
+
+                    <p><strong>E. Certificat de Travail et Attestation Pôle Emploi</strong></p>
+                    <p>Documents obligatoires à remettre au salarié.</p>
+                    <div class="article-divider"></div>
+
+                    <h3>4. Le Licenciement Abusif : Quand Contester ?</h3>
+                    <p>Un licenciement est abusif si :</p>
+                    <ul>
+                        <li>Il est <strong>sans cause réelle et sérieuse</strong> : motifs inventés, non prouvés ou insuffisants</li>
+                        <li>La <strong>procédure n'a pas été respectée</strong> : pas d'entretien préalable, pas de lettre motivée</li>
+                        <li>Il est <strong>discriminatoire</strong> : basé sur le sexe, l'origine, la religion, les opinions politiques, l'état de santé, la grossesse</li>
+                        <li>Il intervient pendant une <strong>période protégée</strong> : congé maternité, arrêt maladie suite à accident du travail</li>
+                        <li>Il constitue des <strong>représailles</strong> : suite à une dénonciation de harcèlement, réclamation de salaires impayés</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>5. Recours du Salarié Licencié</h3>
+
+                    <p><strong>Étape 1 : Tentative de Conciliation</strong></p>
+                    <p>Avant toute action en justice, saisie de l'Inspecteur du Travail pour tenter une conciliation amiable. Cette étape est gratuite et peut aboutir à un accord transactionnel.</p>
+
+                    <p><strong>Étape 2 : Saisine du Tribunal du Travail</strong></p>
+                    <p>En cas d'échec de la conciliation, le salarié peut saisir le tribunal du travail dans un délai de <strong>2 ans</strong> à compter du licenciement.</p>
+
+                    <p><strong>Ce que le Tribunal peut Ordonner :</strong></p>
+                    <ul>
+                        <li><strong>Réintégration</strong> : retour du salarié à son poste (rare en pratique)</li>
+                        <li><strong>Dommages et intérêts</strong> : généralement entre 3 et 12 mois de salaire selon l'ancienneté et le préjudice</li>
+                        <li><strong>Paiement des indemnités légales</strong> : si non versées</li>
+                        <li><strong>Rappel de salaires</strong> : pour salaires impayés</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>6. Cas Particuliers de Protection</h3>
+
+                    <p><strong>A. Femmes Enceintes</strong></p>
+                    <p>Interdiction absolue de licencier une femme enceinte (sauf faute lourde non liée à la grossesse) pendant la grossesse et jusqu'à 14 semaines après l'accouchement.</p>
+
+                    <p><strong>B. Délégués du Personnel et Syndicalistes</strong></p>
+                    <p>Protection renforcée : le licenciement nécessite l'autorisation préalable de l'Inspecteur du Travail.</p>
+
+                    <p><strong>C. Salariés en Arrêt Maladie (Accident du Travail)</strong></p>
+                    <p>Suspension du contrat : le licenciement pendant cette période est nul sauf faute lourde ou impossibilité de maintenir le contrat.</p>
+
+                    <p><strong>D. Salariés Proches de la Retraite</strong></p>
+                    <p>Protection spéciale dans les 5 ans précédant l'âge de la retraite (certaines conventions collectives).</p>
+                    <div class="article-divider"></div>
+
+                    <h3>7. Licenciement Économique : Droits Spécifiques</h3>
+                    <p>En cas de licenciement pour motif économique, l'employeur doit :</p>
+                    <ul>
+                        <li>Justifier la réalité des difficultés économiques</li>
+                        <li>Respecter un ordre de licenciement (ancienneté, charges de famille, qualifications)</li>
+                        <li>Proposer un reclassement au salarié si possible</li>
+                        <li>Consulter les représentants du personnel</li>
+                        <li>Informer l'Inspection du Travail</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>8. Conseils Pratiques pour les Salariés</h3>
+                    <ul>
+                        <li><strong>Conservez tous les documents</strong> : contrat, bulletins de salaire, courriers, témoignages</li>
+                        <li><strong>Ne signez rien sous pression</strong> : prenez le temps de consulter un avocat</li>
+                        <li><strong>Demandez toujours les motifs par écrit</strong> : un licenciement verbal n'a aucune valeur</li>
+                        <li><strong>Vérifiez vos indemnités</strong> : utilisez un simulateur ou consultez un professionnel</li>
+                        <li><strong>Respectez les délais</strong> : 2 ans pour saisir le tribunal</li>
+                        <li><strong>Faites-vous accompagner</strong> : syndicat, avocat, inspection du travail</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>9. Que Faire en Cas de Harcèlement ?</h3>
+                    <p>Si le licenciement fait suite à un harcèlement moral ou sexuel :</p>
+                    <ul>
+                        <li>Le licenciement est nul</li>
+                        <li>Vous pouvez cumuler dommages et intérêts pour licenciement abusif + harcèlement</li>
+                        <li>Possibilité de poursuites pénales contre le harceleur</li>
+                        <li>Réintégration possible avec arriérés de salaires</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>Conclusion</h3>
+                    <p>Le droit du travail béninois protège les salariés contre les licenciements arbitraires. Ne restez pas isolé face à un licenciement que vous jugez injuste. <strong>MJ CONSEILS</strong> vous accompagne dans l'analyse de votre situation, la négociation avec l'employeur et, si nécessaire, la défense de vos droits devant le tribunal du travail.</p>
+                    <p><strong>Vous avez été licencié ou menacé de licenciement ? Contactez-nous pour une consultation gratuite.</strong></p>
+                `
+            },
+            'ia-droit': {
+                date: '09 Février 2026',
+                title: 'Intelligence Artificielle et Droit : Enjeux Juridiques en Afrique',
+                content: `
+                    <p>L'intelligence artificielle (IA) révolutionne progressivement tous les secteurs d'activité, y compris le domaine juridique. En Afrique, cette transformation soulève des questions juridiques complexes qui nécessitent une réflexion approfondie et une adaptation du cadre réglementaire.</p>
+
+                    <h3>1. La Régulation de l'IA en Afrique</h3>
+                    <p>Contrairement à l'Europe avec son règlement sur l'IA ou aux États-Unis, l'Afrique ne dispose pas encore d'un cadre juridique harmonisé pour réguler l'intelligence artificielle. Toutefois, certains pays pionniers comme le Bénin, le Rwanda et le Kenya commencent à élaborer des stratégies nationales.</p>
+                    <div class="article-divider"></div>
+
+                    <h3>2. Protection des Données et IA</h3>
+                    <p>L'utilisation de l'IA implique le traitement massif de données personnelles. Au Bénin, la loi n°2017-20 sur la protection des données personnelles impose des obligations strictes :</p>
+                    <ul>
+                        <li>Consentement explicite pour la collecte de données</li>
+                        <li>Transparence sur l'utilisation des algorithmes</li>
+                        <li>Droit d'opposition aux décisions automatisées</li>
+                        <li>Obligation de notification en cas de violation de données</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>3. Responsabilité Juridique des Systèmes IA</h3>
+                    <p>La question de la responsabilité juridique en cas de dommage causé par un système d'IA reste floue. Qui est responsable lorsqu'un algorithme commet une erreur ? Le développeur, l'utilisateur, ou l'IA elle-même ?</p>
+                    <p>Les tribunaux africains commencent à se pencher sur ces questions, notamment dans les secteurs de la santé (diagnostic assisté par IA) et de la finance (décisions de crédit automatisées).</p>
+                    <div class="article-divider"></div>
+
+                    <h3>4. IA et Emploi : Défis du Droit du Travail</h3>
+                    <p>L'automatisation menace certains emplois mais en crée de nouveaux. Le droit du travail africain doit s'adapter pour :</p>
+                    <ul>
+                        <li>Encadrer la surveillance des employés par IA</li>
+                        <li>Protéger contre les discriminations algorithmiques au recrutement</li>
+                        <li>Réguler le travail avec des plateformes numériques</li>
+                        <li>Anticiper les reconversions professionnelles</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>5. Propriété Intellectuelle et Créations par IA</h3>
+                    <p>Les œuvres créées par des systèmes d'IA (textes, images, musiques) posent la question de la titularité des droits d'auteur. L'Organisation Africaine de la Propriété Intellectuelle (OAPI) réfléchit à adapter son cadre juridique.</p>
+                    <div class="article-divider"></div>
+
+                    <h3>Conclusion</h3>
+                    <p>L'Afrique doit développer son propre cadre juridique pour l'IA, adapté à ses réalités socio-économiques. Chez <strong>MJ CONSEILS</strong>, nous accompagnons entreprises et particuliers dans la compréhension et l'application de ces nouvelles réglementations.</p>
+                    <p><strong>Besoin de conseils sur les aspects juridiques de l'IA ? Contactez-nous.</strong></p>
+                `
+            },
+            'ohada': {
+                date: '05 Février 2026',
+                title: 'OHADA : Les nouveautés du Droit des Sociétés Commerciales',
+                content: `
+                    <p>L'Organisation pour l'Harmonisation en Afrique du Droit des Affaires (OHADA) a récemment introduit des réformes majeures dans l'Acte Uniforme relatif au Droit des Sociétés Commerciales et du Groupement d'Intérêt Économique (AUDSCGIE).</p>
+
+                    <h3>1. Simplification de la Création d'Entreprises</h3>
+                    <p>Les nouvelles dispositions visent à faciliter l'entrepreneuriat en Afrique :</p>
+                    <ul>
+                        <li>Réduction du capital minimum pour certaines formes sociales</li>
+                        <li>Procédures d'immatriculation simplifiées</li>
+                        <li>Possibilité de constituer une SARL unipersonnelle</li>
+                        <li>Délais d'immatriculation réduits à 48-72 heures</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>2. Gouvernance d'Entreprise Renforcée</h3>
+                    <p>L'OHADA impose désormais des standards plus élevés de gouvernance, notamment pour les grandes sociétés. Les dirigeants ont des obligations accrues de transparence et de reddition de comptes envers les actionnaires.</p>
+                    <div class="article-divider"></div>
+
+                    <h3>3. Protection des Minoritaires</h3>
+                    <p>Les actionnaires minoritaires bénéficient de nouveaux droits, incluant un accès facilité à l'information et des mécanismes de recours en cas d'abus de majorité.</p>
+                    <div class="article-divider"></div>
+
+                    <h3>4. Sanctions Renforcées</h3>
+                    <p>Les sanctions contre les dirigeants fautifs ont été durcies, avec des amendes plus lourdes et des peines d'emprisonnement pour les cas graves de détournement ou d'abus de biens sociaux.</p>
+                    <div class="article-divider"></div>
+
+                    <h3>Impact pour les Entreprises au Bénin</h3>
+                    <p>Ces réformes créent un environnement des affaires plus attractif et sécurisé. <strong>MJ CONSEILS</strong> vous accompagne dans la mise en conformité de vos structures et l'optimisation de votre gouvernance.</p>
+                `
+            },
+            'travail': {
+                date: '28 Janvier 2026',
+                title: 'Code du Travail Béninois : Droits et Obligations de l\'Employeur',
+                content: `
+                    <p>Le Code du Travail béninois définit un cadre strict régissant les relations entre employeurs et salariés. Comprendre ces règles est essentiel pour éviter les contentieux et assurer une gestion RH conforme.</p>
+
+                    <h3>1. Le Contrat de Travail</h3>
+                    <p>Tout employeur doit formaliser la relation de travail par un contrat écrit précisant :</p>
+                    <ul>
+                        <li>La nature du poste et les missions</li>
+                        <li>La rémunération et les avantages</li>
+                        <li>La durée (CDD ou CDI)</li>
+                        <li>La période d'essai (max 6 mois renouvelable une fois)</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>2. Rémunération et SMIG</h3>
+                    <p>L'employeur doit respecter le Salaire Minimum Interprofessionnel Garanti (SMIG) fixé par décret. Tout retard de paiement expose à des sanctions.</p>
+                    <div class="article-divider"></div>
+
+                    <h3>3. Durée du Travail et Congés</h3>
+                    <p>La durée légale de travail est de 40 heures hebdomadaires. Les heures supplémentaires doivent être majorées. Chaque salarié a droit à 2 jours de congé par mois travaillé (24 jours/an minimum).</p>
+                    <div class="article-divider"></div>
+
+                    <h3>4. Santé et Sécurité au Travail</h3>
+                    <p>L'employeur a une obligation de sécurité : fourniture d'équipements de protection, respect des normes d'hygiène, visite médicale obligatoire.</p>
+                    <div class="article-divider"></div>
+
+                    <h3>5. Licenciement : Procédures et Indemnités</h3>
+                    <p>Le licenciement doit reposer sur un motif réel et sérieux. La procédure comprend :</p>
+                    <ul>
+                        <li>Convocation à un entretien préalable</li>
+                        <li>Notification écrite du licenciement avec motifs</li>
+                        <li>Respect du préavis</li>
+                        <li>Paiement des indemnités légales</li>
+                    </ul>
+                    <p>Un licenciement abusif expose l'employeur à des dommages et intérêts pouvant atteindre 12 mois de salaire.</p>
+                    <div class="article-divider"></div>
+
+                    <h3>Conclusion</h3>
+                    <p><strong>MJ CONSEILS</strong> vous accompagne dans la rédaction de vos contrats de travail, la gestion des procédures disciplinaires et la défense de vos intérêts devant les juridictions sociales.</p>
+                `
+            },
+            'immobilier': {
+                date: '20 Janvier 2026',
+                title: 'Investissement Immobilier au Bénin : Cadre Juridique 2026',
+                content: `
+                    <p>L'investissement immobilier au Bénin attire de plus en plus d'investisseurs nationaux et étrangers. Cependant, la sécurisation juridique des transactions reste un enjeu majeur.</p>
+
+                    <h3>1. Les Titres de Propriété</h3>
+                    <p>Au Bénin, il existe plusieurs types de titres fonciers :</p>
+                    <ul>
+                        <li><strong>Le Titre Foncier (TF)</strong> : titre définitif et inattaquable délivré après bornage et immatriculation</li>
+                        <li><strong>Le Certificat Administratif (CA)</strong> : titre provisoire en attente de transformation en TF</li>
+                        <li><strong>L'Arrêté de Concession Urbaine</strong> : pour les terrains domaniaux</li>
+                        <li><strong>Les Actes de Vente</strong> : actes notariés ou sous seing privé</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>2. Vérifications Essentielles Avant Achat</h3>
+                    <p>Avant tout investissement, vérifiez :</p>
+                    <ul>
+                        <li>L'authenticité du titre de propriété auprès des services fonciers</li>
+                        <li>L'absence de litige ou d'hypothèque</li>
+                        <li>La conformité du plan cadastral</li>
+                        <li>L'identité réelle du vendeur</li>
+                        <li>Les servitudes éventuelles (passage, vue, etc.)</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>3. La Procédure d'Acquisition</h3>
+                    <p>Une acquisition sécurisée suit ces étapes :</p>
+                    <ul>
+                        <li>Promesse de vente ou compromis</li>
+                        <li>Due diligence complète</li>
+                        <li>Signature de l'acte authentique chez le notaire</li>
+                        <li>Paiement des droits d'enregistrement (environ 10% du prix)</li>
+                        <li>Inscription au Livre Foncier</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>4. Fiscalité Immobilière</h3>
+                    <p>L'investisseur doit budgétiser :</p>
+                    <ul>
+                        <li>Les droits d'enregistrement (10%)</li>
+                        <li>Les frais de notaire (1-3%)</li>
+                        <li>La taxe foncière annuelle</li>
+                        <li>L'impôt sur les revenus locatifs (cas échéant)</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>5. Investisseurs Étrangers : Particularités</h3>
+                    <p>Les non-résidents peuvent acquérir des biens immobiliers au Bénin, mais doivent respecter certaines formalités, notamment l'obtention d'une autorisation préalable pour certains types de terrains.</p>
+                    <div class="article-divider"></div>
+
+                    <h3>Conclusion</h3>
+                    <p>L'immobilier béninois offre des opportunités intéressantes, mais exige une sécurisation juridique rigoureuse. <strong>MJ CONSEILS</strong> vous accompagne à toutes les étapes de votre projet immobilier.</p>
+                `
+            },
+            'succession': {
+                date: '15 Janvier 2026',
+                title: 'Succession et Héritage : Droit Béninois vs Droit Coutumier',
+                content: `
+                    <p>Au Bénin, les successions sont régies à la fois par le Code des Personnes et de la Famille (droit moderne) et par les coutumes locales, créant parfois des situations complexes.</p>
+
+                    <h3>1. Les Héritiers selon le Code</h3>
+                    <p>Le droit positif béninois distingue :</p>
+                    <ul>
+                        <li><strong>Les héritiers réservataires</strong> : descendants et conjoint survivant</li>
+                        <li><strong>Les héritiers ordinaires</strong> : ascendants et collatéraux</li>
+                    </ul>
+                    <p>La réserve héréditaire garantit une part minimale du patrimoine aux descendants (2/3 pour 2 enfants ou plus).</p>
+                    <div class="article-divider"></div>
+
+                    <h3>2. Le Droit Coutumier</h3>
+                    <p>Malgré la primauté du droit écrit, les coutumes restent influentes dans certaines régions. Elles peuvent prévoir :</p>
+                    <ul>
+                        <li>La prééminence de la lignée paternelle</li>
+                        <li>Des règles spécifiques pour la transmission de certains biens (terres ancestrales)</li>
+                        <li>Des obligations envers la famille élargie</li>
+                    </ul>
+                    <p><strong>Important</strong> : Le droit moderne prime juridiquement, mais des compromis sont souvent recherchés.</p>
+                    <div class="article-divider"></div>
+
+                    <h3>3. Le Testament : Sécuriser sa Volonté</h3>
+                    <p>Pour éviter les conflits, il est recommandé de rédiger un testament authentique ou mystique chez un notaire. Le testament permet de :</p>
+                    <ul>
+                        <li>Organiser le partage dans le respect de la réserve</li>
+                        <li>Avantager un héritier sur la quotité disponible</li>
+                        <li>Désigner un exécuteur testamentaire</li>
+                        <li>Faire des legs particuliers</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>4. La Procédure de Règlement de Succession</h3>
+                    <p>Les étapes clés :</p>
+                    <ul>
+                        <li>Établissement de l'acte de décès</li>
+                        <li>Ouverture du testament (si existant)</li>
+                        <li>Inventaire des biens et dettes</li>
+                        <li>Paiement des dettes et frais</li>
+                        <li>Partage entre héritiers</li>
+                        <li>Publication au Livre Foncier pour les immeubles</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>5. Conflits Successoraux : Recours</h3>
+                    <p>En cas de désaccord, les héritiers peuvent saisir le tribunal de première instance. Les litiges portent souvent sur :</p>
+                    <ul>
+                        <li>La validité du testament</li>
+                        <li>L'évaluation des biens</li>
+                        <li>L'inclusion ou exclusion d'un héritier</li>
+                        <li>Le rapport des donations antérieures</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>Conclusion</h3>
+                    <p>Anticiper sa succession permet d'éviter les conflits familiaux et de protéger ses proches. <strong>MJ CONSEILS</strong> vous aide à rédiger votre testament et à organiser la transmission de votre patrimoine.</p>
+                `
+            },
+            'cedeao': {
+                date: '08 Janvier 2026',
+                title: 'Créer son Entreprise en Zone CEDEAO : Opportunités et Défis',
+                content: `
+                    <p>La Communauté Économique des États de l'Afrique de l'Ouest (CEDEAO) offre un marché de plus de 400 millions de consommateurs. Les entrepreneurs béninois peuvent exploiter ce potentiel grâce au principe de libre circulation.</p>
+
+                    <h3>1. Le Cadre Juridique CEDEAO</h3>
+                    <p>La CEDEAO garantit :</p>
+                    <ul>
+                        <li>Liberté d'établissement dans tous les États membres</li>
+                        <li>Traitement non discriminatoire</li>
+                        <li>Libre prestation de services</li>
+                        <li>Libre circulation des capitaux</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>2. S'implanter dans un Autre Pays CEDEAO</h3>
+                    <p>Pour créer une entreprise dans un pays membre, l'entrepreneur béninois peut :</p>
+                    <ul>
+                        <li>Créer une filiale locale (forme la plus courante)</li>
+                        <li>Ouvrir une succursale</li>
+                        <li>Établir un bureau de représentation</li>
+                    </ul>
+                    <p>Chaque forme a ses avantages fiscaux et juridiques spécifiques.</p>
+                    <div class="article-divider"></div>
+
+                    <h3>3. Les Secteurs Porteurs</h3>
+                    <p>Les opportunités sont nombreuses dans :</p>
+                    <ul>
+                        <li>L'agroalimentaire et l'exportation agricole</li>
+                        <li>Les technologies et le numérique</li>
+                        <li>Le commerce transfrontalier</li>
+                        <li>Les services financiers</li>
+                        <li>Le BTP et les infrastructures</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>4. Défis et Obstacles</h3>
+                    <p>Malgré le cadre favorable, certaines difficultés subsistent :</p>
+                    <ul>
+                        <li>Divergences dans les procédures nationales</li>
+                        <li>Barrières non tarifaires</li>
+                        <li>Complexité fiscale (conventions fiscales variables)</li>
+                        <li>Questions douanières</li>
+                        <li>Protection juridique inégale selon les pays</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>5. Sécuriser son Expansion</h3>
+                    <p>Pour réussir son implantation, il est essentiel de :</p>
+                    <ul>
+                        <li>Réaliser une étude de marché approfondie</li>
+                        <li>Se faire accompagner par un conseil juridique local</li>
+                        <li>Vérifier les conventions fiscales bilatérales</li>
+                        <li>Protéger ses droits de propriété intellectuelle</li>
+                        <li>Rédiger des contrats adaptés au contexte local</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>Conclusion</h3>
+                    <p>La CEDEAO ouvre des perspectives exceptionnelles pour les entrepreneurs béninois. <strong>MJ CONSEILS</strong>, grâce à son réseau de correspondants, vous accompagne dans votre expansion régionale.</p>
+                `
+            },
+            'divorce': {
+                date: '22 Décembre 2025',
+                title: 'Divorce et Pension Alimentaire : Ce que dit la Loi au Bénin',
+                content: `
+                    <p>Le divorce est une épreuve difficile. Comprendre vos droits et obligations permet de mieux appréhender cette procédure et de protéger vos intérêts.</p>
+
+                    <h3>1. Les Formes de Divorce</h3>
+                    <p>Le Code des Personnes et de la Famille prévoit trois types de divorce :</p>
+                    <ul>
+                        <li><strong>Divorce par consentement mutuel</strong> : les époux s'accordent sur la rupture et ses conséquences</li>
+                        <li><strong>Divorce pour faute</strong> : adultère, violences, abandon du domicile conjugal</li>
+                        <li><strong>Divorce pour rupture de la vie commune</strong> : séparation de fait de plus de 3 ans</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>2. La Procédure de Divorce</h3>
+                    <p>Les étapes sont les suivantes :</p>
+                    <ul>
+                        <li>Requête introductive d'instance déposée par avocat</li>
+                        <li>Tentative de conciliation devant le juge</li>
+                        <li>En cas d'échec, instruction du dossier</li>
+                        <li>Audiences contradictoires</li>
+                        <li>Jugement de divorce</li>
+                    </ul>
+                    <p>La durée moyenne varie de 6 mois (consentement mutuel) à 2 ans (contentieux complexe).</p>
+                    <div class="article-divider"></div>
+
+                    <h3>3. La Garde des Enfants</h3>
+                    <p>Le juge décide de la garde en privilégiant l'intérêt supérieur de l'enfant. Critères pris en compte :</p>
+                    <ul>
+                        <li>Capacités éducatives et affectives de chaque parent</li>
+                        <li>Disponibilité et stabilité</li>
+                        <li>Conditions matérielles</li>
+                        <li>Souhait de l'enfant (selon son âge)</li>
+                    </ul>
+                    <p>Le parent non gardien bénéficie d'un droit de visite et d'hébergement.</p>
+                    <div class="article-divider"></div>
+
+                    <h3>4. La Pension Alimentaire</h3>
+                    <p>Le parent non gardien doit contribuer à l'entretien et l'éducation des enfants. Le montant de la pension est fixé selon :</p>
+                    <ul>
+                        <li>Les besoins de l'enfant (scolarité, santé, loisirs, logement)</li>
+                        <li>Les ressources du débiteur</li>
+                        <li>La situation du parent gardien</li>
+                    </ul>
+                    <p>Le défaut de paiement de la pension est sanctionné pénalement (abandon de famille).</p>
+                    <div class="article-divider"></div>
+
+                    <h3>5. Partage des Biens</h3>
+                    <p>Le régime matrimonial détermine le partage :</p>
+                    <ul>
+                        <li><strong>Communauté de biens</strong> : partage égal des biens acquis pendant le mariage</li>
+                        <li><strong>Séparation de biens</strong> : chacun conserve ses biens propres</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>6. Prestation Compensatoire</h3>
+                    <p>En cas de disparité importante dans les conditions de vie post-divorce, le juge peut accorder une prestation compensatoire au conjoint défavorisé.</p>
+                    <div class="article-divider"></div>
+
+                    <h3>Conclusion</h3>
+                    <p>Le divorce nécessite un accompagnement juridique pour protéger vos droits et ceux de vos enfants. <strong>MJ CONSEILS</strong> vous assiste avec bienveillance et professionnalisme.</p>
+                `
+            },
+            'donnees': {
+                date: '15 Décembre 2025',
+                title: 'Protection des Données Personnelles : Loi Béninoise 2023',
+                content: `
+                    <p>La loi n°2017-20 portant Code du Numérique, modifiée en 2023, impose aux entreprises et institutions béninoises des obligations strictes en matière de protection des données personnelles.</p>
+
+                    <h3>1. Qu'est-ce qu'une Donnée Personnelle ?</h3>
+                    <p>Toute information relative à une personne physique identifiée ou identifiable :</p>
+                    <ul>
+                        <li>Nom, prénoms, adresse</li>
+                        <li>Numéro de téléphone, email</li>
+                        <li>Numéro d'identité, données biométriques</li>
+                        <li>Données de localisation, IP</li>
+                        <li>Informations financières, médicales</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>2. Obligations des Responsables de Traitement</h3>
+                    <p>Toute organisation qui collecte des données doit :</p>
+                    <ul>
+                        <li>Informer les personnes de la collecte et de l'utilisation</li>
+                        <li>Obtenir le consentement explicite (sauf exceptions légales)</li>
+                        <li>Garantir la sécurité des données</li>
+                        <li>Limiter la conservation dans le temps</li>
+                        <li>Se déclarer auprès de l'Autorité de Protection des Données Personnelles (APDP)</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>3. Droits des Personnes Concernées</h3>
+                    <p>Toute personne dispose de droits sur ses données :</p>
+                    <ul>
+                        <li><strong>Droit d'accès</strong> : obtenir copie de ses données</li>
+                        <li><strong>Droit de rectification</strong> : corriger des données inexactes</li>
+                        <li><strong>Droit d'opposition</strong> : refuser un traitement</li>
+                        <li><strong>Droit à l'effacement</strong> : obtenir la suppression</li>
+                        <li><strong>Droit à la portabilité</strong> : récupérer ses données dans un format utilisable</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>4. Transferts de Données Hors du Bénin</h3>
+                    <p>Le transfert de données vers un pays tiers nécessite des garanties appropriées (clauses contractuelles types, certification). L'APDP peut interdire un transfert si le pays destinataire ne garantit pas un niveau de protection suffisant.</p>
+                    <div class="article-divider"></div>
+
+                    <h3>5. Sanctions en cas de Violation</h3>
+                    <p>Le non-respect de la loi expose à :</p>
+                    <ul>
+                        <li>Amendes administratives pouvant atteindre 100 millions FCFA</li>
+                        <li>Sanctions pénales : emprisonnement de 6 mois à 5 ans</li>
+                        <li>Dommages et intérêts envers les victimes</li>
+                        <li>Atteinte à la réputation</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>6. Se Mettre en Conformité</h3>
+                    <p>Les étapes essentielles :</p>
+                    <ul>
+                        <li>Cartographier les traitements de données</li>
+                        <li>Mettre à jour les politiques de confidentialité</li>
+                        <li>Former le personnel</li>
+                        <li>Sécuriser les systèmes informatiques</li>
+                        <li>Désigner un Délégué à la Protection des Données (DPO)</li>
+                        <li>Effectuer les déclarations obligatoires</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>Conclusion</h3>
+                    <p>La conformité à la loi sur les données personnelles n'est plus une option. <strong>MJ CONSEILS</strong> vous accompagne dans votre mise en conformité et vous représente en cas de contrôle ou litige.</p>
+                `
+            },
+            'franco-benin': {
+                date: '10 Décembre 2025',
+                title: 'Droit des Affaires Franco-Béninois : Réussir vos Partenariats',
+                content: `
+                    <p>Les relations commerciales entre la France et le Bénin s'intensifient. Sécuriser juridiquement ces partenariats nécessite une connaissance des deux systèmes juridiques.</p>
+
+                    <h3>1. Choisir la Structure Juridique Adaptée</h3>
+                    <p>Plusieurs options s'offrent aux partenaires :</p>
+                    <ul>
+                        <li><strong>Joint-venture</strong> : création d'une société commune au Bénin</li>
+                        <li><strong>Accord de distribution</strong> : un partenaire béninois distribue les produits français</li>
+                        <li><strong>Franchise</strong> : transfert de savoir-faire contre redevances</li>
+                        <li><strong>Succursale</strong> : établissement direct de l'entreprise française au Bénin</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>2. La Rédaction du Contrat International</h3>
+                    <p>Le contrat doit préciser :</p>
+                    <ul>
+                        <li>L'objet et les obligations de chaque partie</li>
+                        <li>Les modalités de paiement et garanties</li>
+                        <li>La loi applicable (française, béninoise, OHADA ?)</li>
+                        <li>La juridiction compétente en cas de litige</li>
+                        <li>Les clauses de résiliation</li>
+                        <li>La protection de la propriété intellectuelle</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>3. Fiscalité des Opérations Transfrontalières</h3>
+                    <p>La Convention Fiscale Franco-Béninoise évite la double imposition. Points d'attention :</p>
+                    <ul>
+                        <li>Retenues à la source sur dividendes, intérêts, redevances</li>
+                        <li>Prix de transfert entre sociétés liées</li>
+                        <li>Crédit d'impôt pour éviter la double imposition</li>
+                        <li>Régime des établissements stables</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>4. Aspects Douaniers et Logistiques</h3>
+                    <p>Les échanges de marchandises impliquent :</p>
+                    <ul>
+                        <li>Respect des réglementations douanières des deux pays</li>
+                        <li>Certificats d'origine et documents sanitaires</li>
+                        <li>Incoterms définissant les responsabilités de chacun</li>
+                        <li>Assurance transport</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>5. Règlement des Différends</h3>
+                    <p>Privilégier des mécanismes alternatifs :</p>
+                    <ul>
+                        <li><strong>Médiation</strong> : résolution amiable avec un tiers neutre</li>
+                        <li><strong>Arbitrage international</strong> : Cour d'Arbitrage de la CCJA (OHADA) ou CCI Paris</li>
+                    </ul>
+                    <p>L'arbitrage offre neutralité, rapidité et exécution facilitée grâce à la Convention de New York.</p>
+                    <div class="article-divider"></div>
+
+                    <h3>6. Investissements Français au Bénin</h3>
+                    <p>Le Bénin a signé avec la France un Accord de Protection et Promotion des Investissements (APPI) garantissant :</p>
+                    <ul>
+                        <li>Traitement équitable et sécurité juridique</li>
+                        <li>Protection contre l'expropriation</li>
+                        <li>Libre transfert des capitaux</li>
+                        <li>Accès à l'arbitrage international en cas de litige avec l'État</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>Conclusion</h3>
+                    <p>Les partenariats franco-béninois sont prometteurs mais nécessitent une structuration juridique rigoureuse. <strong>MJ CONSEILS</strong>, avec son correspondant en France, vous offre une expertise binationale unique.</p>
+                `
+            },
+            'contentieux': {
+                date: '01 Décembre 2025',
+                title: 'Contentieux Commercial OHADA : Stratégies de Résolution',
+                content: `
+                    <p>Les litiges commerciaux peuvent paralyser une entreprise. L'OHADA offre plusieurs mécanismes de résolution adaptés à chaque situation.</p>
+
+                    <h3>1. Privilégier la Négociation Amiable</h3>
+                    <p>Avant toute action en justice, tentez une résolution amiable :</p>
+                    <ul>
+                        <li>Courrier de mise en demeure</li>
+                        <li>Réunion entre parties</li>
+                        <li>Transaction écrite</li>
+                    </ul>
+                    <p>Avantages : rapidité, coût réduit, préservation des relations commerciales.</p>
+                    <div class="article-divider"></div>
+
+                    <h3>2. La Médiation Commerciale</h3>
+                    <p>Un médiateur neutre facilite le dialogue entre les parties. La médiation est :</p>
+                    <ul>
+                        <li>Confidentielle</li>
+                        <li>Rapide (quelques semaines)</li>
+                        <li>Moins coûteuse qu'un procès</li>
+                        <li>Préserve les relations d'affaires</li>
+                    </ul>
+                    <p>L'accord de médiation peut être homologué par un tribunal pour force exécutoire.</p>
+                    <div class="article-divider"></div>
+
+                    <h3>3. L'Arbitrage OHADA (CCJA)</h3>
+                    <p>La Cour Commune de Justice et d'Arbitrage (CCJA) offre un arbitrage reconnu dans 17 pays africains. Atouts :</p>
+                    <ul>
+                        <li>Expertise des arbitres en droit OHADA</li>
+                        <li>Procédure accélérée (12 mois maximum)</li>
+                        <li>Sentence définitive et exécutoire dans tous les États OHADA</li>
+                        <li>Confidentialité</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>4. La Voie Judiciaire</h3>
+                    <p>Si les modes alternatifs échouent, le recours aux tribunaux s'impose :</p>
+                    <ul>
+                        <li><strong>Référé</strong> : procédure d'urgence pour mesures conservatoires</li>
+                        <li><strong>Injonction de payer</strong> : recouvrement accéléré de créances certaines</li>
+                        <li><strong>Action au fond</strong> : procédure complète avec instruction</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>5. Mesures Conservatoires</h3>
+                    <p>Pour sécuriser vos droits pendant la procédure :</p>
+                    <ul>
+                        <li><strong>Saisie conservatoire</strong> : bloquer les biens du débiteur</li>
+                        <li><strong>Hypothèque judiciaire provisoire</strong> : garantir sur un immeuble</li>
+                        <li><strong>Séquestre</strong> : placer un bien litigieux sous main de justice</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>6. Exécution des Décisions</h3>
+                    <p>Obtenir gain de cause n'est que la première étape. L'exécution nécessite :</p>
+                    <ul>
+                        <li>Signification de la décision par huissier</li>
+                        <li>Mise en demeure d'exécuter</li>
+                        <li>Saisies et ventes forcées si nécessaire</li>
+                    </ul>
+                    <p>Les sentences arbitrales CCJA sont exécutoires de plein droit sans exequatur.</p>
+                    <div class="article-divider"></div>
+
+                    <h3>7. Prévention des Litiges</h3>
+                    <p>Mieux vaut prévenir que guérir :</p>
+                    <ul>
+                        <li>Rédiger des contrats précis et complets</li>
+                        <li>Inclure une clause de médiation ou d'arbitrage</li>
+                        <li>Documenter tous les échanges</li>
+                        <li>Effectuer des due diligences avant contracter</li>
+                    </ul>
+                    <div class="article-divider"></div>
+
+                    <h3>Conclusion</h3>
+                    <p>Chaque contentieux est unique et requiert une stratégie adaptée. <strong>MJ CONSEILS</strong> vous conseille sur le mode de résolution optimal et vous représente devant toutes les juridictions.</p>
+                `
+            }
+        };
+
+        const modal = document.getElementById('articleModal');
+        const modalDate = document.getElementById('modalDate');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalBody = document.getElementById('modalBody');
+        const closeBtn = document.querySelector('.modal-close');
+
+        // Open modal when clicking on blog card or read more link
+        document.querySelectorAll('.blog-card').forEach(card => {
+            card.addEventListener('click', function(e) {
+                e.preventDefault();
+                const articleId = this.getAttribute('data-article');
+                const article = articles[articleId];
+                
+                if (article) {
+                    modalDate.textContent = article.date;
+                    modalTitle.textContent = article.title;
+                    modalBody.innerHTML = article.content;
+                    modal.classList.add('active');
+                    document.body.style.overflow = 'hidden';
+                }
+            });
+        });
+
+        // Close modal
+        closeBtn.addEventListener('click', function() {
+            modal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        });
+
+        // Close modal when clicking outside
+        modal.addEventListener('click', function(e) {
+            if (e.target === modal) {
+                modal.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Close with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && modal.classList.contains('active')) {
+                modal.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
         });
     </script>
 </body>
